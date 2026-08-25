@@ -1,0 +1,5 @@
+video_brutos/
+partidas_cortadas/
+partidas_limpas/
+__pycache__/
+*.pyc
