@@ -1,0 +1,1443 @@
+image_path,text
+players_dataset/crop_0000001_frame_000000_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000002_frame_000000_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000003_frame_000000_det_02_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000004_frame_000000_det_03_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000005_frame_000000_det_04_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000006_frame_000001_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000007_frame_000001_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000008_frame_000001_det_02_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000009_frame_000001_det_03_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000010_frame_000001_det_04_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000011_frame_000002_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000012_frame_000002_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000013_frame_000002_det_02_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000014_frame_000002_det_03_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000015_frame_000002_det_04_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000016_frame_000003_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000017_frame_000003_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000018_frame_000003_det_02_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000019_frame_000003_det_03_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000020_frame_000003_det_04_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000021_frame_000003_det_05_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000022_frame_000004_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000023_frame_000004_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000024_frame_000004_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000025_frame_000004_det_03_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000026_frame_000005_det_00_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000027_frame_000005_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000028_frame_000005_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000029_frame_000005_det_03_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000030_frame_000005_det_04_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000031_frame_000005_det_05_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000032_frame_000006_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000033_frame_000006_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000034_frame_000006_det_02_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000035_frame_000006_det_03_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000036_frame_000006_det_04_cls_3_conf_0.76.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000037_frame_000006_det_05_cls_3_conf_0.74.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000038_frame_000006_det_06_cls_3_conf_0.74.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000039_frame_000007_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000040_frame_000007_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000041_frame_000007_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000042_frame_000007_det_03_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000043_frame_000007_det_04_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000044_frame_000007_det_06_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000045_frame_000008_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000046_frame_000008_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000047_frame_000008_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000048_frame_000008_det_03_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000049_frame_000008_det_04_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000050_frame_000009_det_00_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000051_frame_000009_det_01_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000052_frame_000009_det_02_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000053_frame_000009_det_03_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000054_frame_000009_det_04_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000055_frame_000010_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000056_frame_000010_det_01_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000057_frame_000010_det_02_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000058_frame_000010_det_03_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000059_frame_000010_det_04_cls_3_conf_0.79.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000060_frame_000010_det_05_cls_3_conf_0.70.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000061_frame_000011_det_00_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000062_frame_000011_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000063_frame_000011_det_02_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000064_frame_000011_det_03_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000065_frame_000011_det_04_cls_3_conf_0.78.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000066_frame_000011_det_05_cls_3_conf_0.74.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000067_frame_000012_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000068_frame_000012_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000069_frame_000012_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000070_frame_000012_det_04_cls_3_conf_0.70.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000071_frame_000012_det_05_cls_3_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000072_frame_000013_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000073_frame_000013_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000074_frame_000013_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000075_frame_000014_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000076_frame_000014_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000077_frame_000014_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000078_frame_000015_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000079_frame_000015_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000080_frame_000015_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000081_frame_000015_det_03_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000082_frame_000016_det_00_cls_3_conf_0.95.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000083_frame_000016_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000084_frame_000016_det_02_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000085_frame_000016_det_03_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000086_frame_000017_det_00_cls_3_conf_0.95.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000087_frame_000017_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000088_frame_000017_det_02_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000089_frame_000017_det_03_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000090_frame_000017_det_05_cls_3_conf_0.66.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000091_frame_000018_det_00_cls_3_conf_0.97.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000092_frame_000018_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000093_frame_000018_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000094_frame_000018_det_03_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000095_frame_000019_det_00_cls_3_conf_0.96.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000096_frame_000019_det_01_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000097_frame_000019_det_02_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000098_frame_000019_det_04_cls_3_conf_0.71.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000099_frame_000020_det_00_cls_3_conf_0.97.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000100_frame_000020_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000101_frame_000020_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000102_frame_000020_det_03_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000103_frame_000021_det_00_cls_3_conf_0.96.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000104_frame_000021_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000105_frame_000021_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000106_frame_000021_det_03_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000107_frame_000022_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000108_frame_000022_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000109_frame_000022_det_02_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000110_frame_000022_det_03_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000111_frame_000023_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000112_frame_000023_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000113_frame_000023_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000114_frame_000023_det_04_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000115_frame_000024_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000116_frame_000024_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000117_frame_000024_det_02_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000118_frame_000024_det_03_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000119_frame_000024_det_05_cls_3_conf_0.65.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000120_frame_000025_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000121_frame_000025_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000122_frame_000025_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000123_frame_000026_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000124_frame_000026_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000125_frame_000026_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000126_frame_000026_det_03_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000127_frame_000027_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000128_frame_000027_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000129_frame_000027_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000130_frame_000027_det_03_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000131_frame_000028_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000132_frame_000028_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000133_frame_000028_det_02_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000134_frame_000028_det_03_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000135_frame_000028_det_04_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000136_frame_000029_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000137_frame_000029_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000138_frame_000029_det_02_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000139_frame_000029_det_03_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000140_frame_000029_det_04_cls_3_conf_0.66.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000141_frame_000030_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000142_frame_000030_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000143_frame_000030_det_02_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000144_frame_000030_det_03_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000145_frame_000030_det_04_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000146_frame_000031_det_00_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000147_frame_000031_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000148_frame_000031_det_02_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000149_frame_000031_det_03_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000150_frame_000031_det_04_cls_3_conf_0.69.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000151_frame_000031_det_05_cls_3_conf_0.65.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000152_frame_000032_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000153_frame_000032_det_01_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000154_frame_000032_det_02_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000155_frame_000032_det_03_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000156_frame_000032_det_04_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000157_frame_000032_det_05_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000158_frame_000033_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000159_frame_000033_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000160_frame_000033_det_02_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000161_frame_000033_det_03_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000162_frame_000033_det_05_cls_3_conf_0.67.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000163_frame_000033_det_06_cls_3_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000164_frame_000034_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000165_frame_000034_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000166_frame_000034_det_02_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000167_frame_000034_det_03_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000168_frame_000035_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000169_frame_000035_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000170_frame_000035_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000171_frame_000035_det_03_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000172_frame_000036_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000173_frame_000036_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000174_frame_000036_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000175_frame_000036_det_03_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000176_frame_000036_det_04_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000177_frame_000036_det_05_cls_3_conf_0.83.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000178_frame_000037_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000179_frame_000037_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000180_frame_000037_det_02_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000181_frame_000037_det_03_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000182_frame_000037_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000183_frame_000038_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000184_frame_000038_det_01_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000185_frame_000038_det_02_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000186_frame_000038_det_04_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000187_frame_000038_det_05_cls_3_conf_0.70.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000188_frame_000038_det_06_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000189_frame_000039_det_01_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000190_frame_000039_det_02_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000191_frame_000039_det_03_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000192_frame_000039_det_04_cls_3_conf_0.79.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000193_frame_000039_det_05_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000194_frame_000039_det_06_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000195_frame_000040_det_00_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000196_frame_000040_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000197_frame_000040_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000198_frame_000040_det_03_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000199_frame_000040_det_05_cls_3_conf_0.74.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000200_frame_000040_det_06_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000201_frame_000041_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000202_frame_000041_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000203_frame_000041_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000204_frame_000041_det_03_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000205_frame_000041_det_04_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000206_frame_000041_det_06_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000207_frame_000042_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000208_frame_000042_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000209_frame_000042_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000210_frame_000042_det_03_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000211_frame_000042_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000212_frame_000043_det_00_cls_3_conf_0.95.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000213_frame_000043_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000214_frame_000043_det_02_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000215_frame_000043_det_03_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000216_frame_000043_det_04_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000217_frame_000043_det_05_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000218_frame_000043_det_06_cls_3_conf_0.68.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000219_frame_000044_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000220_frame_000044_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000221_frame_000044_det_02_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000222_frame_000044_det_03_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000223_frame_000044_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000224_frame_000044_det_05_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000225_frame_000045_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000226_frame_000045_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000227_frame_000045_det_02_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000228_frame_000045_det_03_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000229_frame_000045_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000230_frame_000045_det_05_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000231_frame_000046_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000232_frame_000046_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000233_frame_000046_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000234_frame_000046_det_03_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000235_frame_000046_det_04_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000236_frame_000046_det_05_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000237_frame_000047_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000238_frame_000047_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000239_frame_000047_det_02_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000240_frame_000047_det_03_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000241_frame_000047_det_04_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000242_frame_000048_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000243_frame_000048_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000244_frame_000048_det_03_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000245_frame_000048_det_04_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000246_frame_000048_det_05_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000247_frame_000049_det_00_cls_3_conf_0.95.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000248_frame_000049_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000249_frame_000049_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000250_frame_000049_det_03_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000251_frame_000049_det_06_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000252_frame_000049_det_07_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000253_frame_000050_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000254_frame_000050_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000255_frame_000050_det_02_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000256_frame_000050_det_04_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000257_frame_000050_det_05_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000258_frame_000050_det_06_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000259_frame_000050_det_08_cls_3_conf_0.66.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000260_frame_000051_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000261_frame_000051_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000262_frame_000051_det_02_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000263_frame_000051_det_04_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000264_frame_000051_det_05_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000265_frame_000051_det_06_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000266_frame_000051_det_07_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000267_frame_000051_det_08_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000268_frame_000052_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000269_frame_000052_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000270_frame_000052_det_02_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000271_frame_000052_det_03_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000272_frame_000052_det_04_cls_3_conf_0.79.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000273_frame_000052_det_05_cls_3_conf_0.71.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000274_frame_000052_det_07_cls_3_conf_0.69.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000275_frame_000053_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000276_frame_000053_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000277_frame_000053_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000278_frame_000053_det_03_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000279_frame_000053_det_04_cls_3_conf_0.83.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000280_frame_000053_det_05_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000281_frame_000054_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000282_frame_000054_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000283_frame_000054_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000284_frame_000054_det_03_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000285_frame_000054_det_04_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000286_frame_000055_det_00_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000287_frame_000055_det_02_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000288_frame_000055_det_03_cls_3_conf_0.80.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000289_frame_000055_det_04_cls_3_conf_0.65.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000290_frame_000056_det_00_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000291_frame_000056_det_01_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000292_frame_000056_det_02_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000293_frame_000056_det_03_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000294_frame_000056_det_04_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000295_frame_000056_det_05_cls_3_conf_0.76.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000296_frame_000057_det_00_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000297_frame_000057_det_01_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000298_frame_000057_det_02_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000299_frame_000057_det_03_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000300_frame_000057_det_04_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000301_frame_000057_det_05_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000302_frame_000057_det_07_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000303_frame_000058_det_00_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000304_frame_000058_det_01_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000305_frame_000058_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000306_frame_000058_det_03_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000307_frame_000058_det_04_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000308_frame_000058_det_06_cls_3_conf_0.75.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000309_frame_000058_det_07_cls_3_conf_0.74.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000310_frame_000059_det_00_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000311_frame_000059_det_01_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000312_frame_000059_det_02_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000313_frame_000059_det_03_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000314_frame_000059_det_04_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000315_frame_000059_det_05_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000316_frame_000059_det_06_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000317_frame_000059_det_07_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000318_frame_000059_det_09_cls_4_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000319_frame_000060_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000320_frame_000060_det_01_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000321_frame_000060_det_03_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000322_frame_000060_det_04_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000323_frame_000060_det_05_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000324_frame_000060_det_07_cls_3_conf_0.74.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000325_frame_000060_det_08_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000326_frame_000060_det_09_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000327_frame_000060_det_10_cls_3_conf_0.70.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000328_frame_000061_det_00_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000329_frame_000061_det_02_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000330_frame_000061_det_03_cls_3_conf_0.83.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000331_frame_000061_det_05_cls_3_conf_0.78.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000332_frame_000062_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000333_frame_000062_det_01_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000334_frame_000062_det_03_cls_3_conf_0.75.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000335_frame_000062_det_04_cls_3_conf_0.74.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000336_frame_000062_det_05_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000337_frame_000063_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000338_frame_000063_det_01_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000339_frame_000063_det_02_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000340_frame_000063_det_03_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000341_frame_000063_det_04_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000342_frame_000063_det_06_cls_3_conf_0.76.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000343_frame_000063_det_08_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000344_frame_000064_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000345_frame_000064_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000346_frame_000064_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000347_frame_000064_det_03_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000348_frame_000064_det_04_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000349_frame_000064_det_05_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000350_frame_000064_det_06_cls_3_conf_0.82.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000351_frame_000064_det_07_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000352_frame_000065_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000353_frame_000065_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000354_frame_000065_det_02_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000355_frame_000065_det_04_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000356_frame_000065_det_05_cls_3_conf_0.80.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000357_frame_000065_det_06_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000358_frame_000065_det_07_cls_3_conf_0.74.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000359_frame_000065_det_08_cls_3_conf_0.70.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000360_frame_000065_det_09_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000361_frame_000066_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000362_frame_000066_det_02_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000363_frame_000066_det_03_cls_3_conf_0.79.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000364_frame_000066_det_04_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000365_frame_000066_det_05_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000366_frame_000066_det_06_cls_3_conf_0.66.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000367_frame_000067_det_00_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000368_frame_000067_det_02_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000369_frame_000067_det_03_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000370_frame_000067_det_04_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000371_frame_000067_det_05_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000372_frame_000068_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000373_frame_000068_det_01_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000374_frame_000068_det_02_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000375_frame_000068_det_03_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000376_frame_000068_det_04_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000377_frame_000069_det_00_cls_3_conf_0.96.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000378_frame_000069_det_01_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000379_frame_000069_det_02_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000380_frame_000069_det_03_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000381_frame_000069_det_05_cls_3_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000382_frame_000070_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000383_frame_000070_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000384_frame_000070_det_02_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000385_frame_000070_det_04_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000386_frame_000070_det_05_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000387_frame_000070_det_06_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000388_frame_000070_det_08_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000389_frame_000071_det_00_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000390_frame_000071_det_02_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000391_frame_000071_det_04_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000392_frame_000071_det_05_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000393_frame_000071_det_06_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000394_frame_000071_det_07_cls_3_conf_0.67.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000395_frame_000072_det_00_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000396_frame_000072_det_03_cls_3_conf_0.80.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000397_frame_000072_det_04_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000399_frame_000073_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000400_frame_000073_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000401_frame_000073_det_03_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000402_frame_000073_det_05_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000403_frame_000073_det_07_cls_3_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000404_frame_000073_det_08_cls_3_conf_0.66.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000405_frame_000074_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000406_frame_000074_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000407_frame_000074_det_02_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000408_frame_000074_det_04_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000409_frame_000075_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000410_frame_000075_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000411_frame_000075_det_02_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000412_frame_000075_det_04_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000413_frame_000076_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000414_frame_000076_det_02_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000415_frame_000076_det_03_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000416_frame_000076_det_04_cls_3_conf_0.76.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000417_frame_000077_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000418_frame_000077_det_01_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000419_frame_000077_det_03_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000420_frame_000078_det_00_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000421_frame_000078_det_01_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000422_frame_000078_det_02_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000423_frame_000078_det_03_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000424_frame_000079_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000425_frame_000079_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000426_frame_000079_det_02_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000427_frame_000079_det_04_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000428_frame_000079_det_05_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000429_frame_000080_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000430_frame_000080_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000431_frame_000080_det_02_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000432_frame_000080_det_03_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000433_frame_000080_det_05_cls_3_conf_0.70.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000434_frame_000080_det_06_cls_3_conf_0.69.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000435_frame_000081_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000436_frame_000081_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000437_frame_000081_det_02_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000438_frame_000081_det_04_cls_3_conf_0.82.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000439_frame_000081_det_05_cls_3_conf_0.76.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000440_frame_000081_det_06_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000441_frame_000081_det_07_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000442_frame_000081_det_08_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000443_frame_000082_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000444_frame_000082_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000445_frame_000082_det_02_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000446_frame_000082_det_04_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000447_frame_000082_det_05_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000448_frame_000082_det_06_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000449_frame_000082_det_07_cls_3_conf_0.74.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000450_frame_000083_det_00_cls_3_conf_0.95.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000451_frame_000083_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000452_frame_000083_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000453_frame_000083_det_04_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000454_frame_000083_det_05_cls_3_conf_0.66.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000455_frame_000084_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000456_frame_000084_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000457_frame_000084_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000458_frame_000084_det_04_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000459_frame_000084_det_05_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000460_frame_000084_det_06_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000461_frame_000085_det_00_cls_3_conf_0.95.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000462_frame_000085_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000463_frame_000085_det_02_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000464_frame_000085_det_03_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000465_frame_000085_det_05_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000466_frame_000085_det_06_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000467_frame_000085_det_07_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000468_frame_000086_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000469_frame_000086_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000470_frame_000086_det_02_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000471_frame_000086_det_03_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000472_frame_000086_det_04_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000473_frame_000086_det_06_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000474_frame_000086_det_08_cls_3_conf_0.65.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000475_frame_000087_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000476_frame_000087_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000477_frame_000087_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000478_frame_000087_det_03_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000479_frame_000087_det_04_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000480_frame_000087_det_06_cls_3_conf_0.78.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000481_frame_000087_det_07_cls_3_conf_0.66.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000482_frame_000088_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000483_frame_000088_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000484_frame_000088_det_02_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000485_frame_000088_det_04_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000486_frame_000088_det_05_cls_3_conf_0.69.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000487_frame_000089_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000488_frame_000089_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000489_frame_000089_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000490_frame_000089_det_04_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000491_frame_000089_det_05_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000492_frame_000090_det_00_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000493_frame_000090_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000494_frame_000090_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000495_frame_000090_det_03_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000496_frame_000090_det_05_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000497_frame_000091_det_00_cls_3_conf_0.97.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000498_frame_000091_det_01_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000499_frame_000091_det_02_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000500_frame_000091_det_03_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000501_frame_000091_det_05_cls_3_conf_0.69.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000502_frame_000092_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000503_frame_000092_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000504_frame_000092_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000505_frame_000092_det_03_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000506_frame_000092_det_06_cls_3_conf_0.75.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000507_frame_000092_det_08_cls_4_conf_0.65.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000508_frame_000093_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000509_frame_000093_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000510_frame_000093_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000511_frame_000093_det_05_cls_4_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000512_frame_000094_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000513_frame_000094_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000514_frame_000094_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000515_frame_000094_det_03_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000516_frame_000094_det_06_cls_4_conf_0.74.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000517_frame_000095_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000518_frame_000095_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000519_frame_000095_det_02_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000520_frame_000095_det_03_cls_4_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000521_frame_000095_det_06_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000522_frame_000096_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000523_frame_000096_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000524_frame_000096_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000525_frame_000096_det_03_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000526_frame_000096_det_04_cls_4_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000527_frame_000096_det_05_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000528_frame_000097_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000529_frame_000097_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000530_frame_000097_det_02_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000531_frame_000098_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000532_frame_000098_det_01_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000533_frame_000098_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000534_frame_000098_det_04_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000535_frame_000098_det_05_cls_3_conf_0.74.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000536_frame_000099_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000537_frame_000099_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000538_frame_000099_det_02_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000539_frame_000099_det_04_cls_3_conf_0.74.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000540_frame_000099_det_05_cls_3_conf_0.70.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000541_frame_000100_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000542_frame_000100_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000543_frame_000100_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000544_frame_000100_det_03_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000545_frame_000100_det_04_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000546_frame_000101_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000547_frame_000101_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000548_frame_000101_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000549_frame_000102_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000550_frame_000102_det_01_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000551_frame_000103_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000552_frame_000103_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000553_frame_000103_det_02_cls_4_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000554_frame_000104_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000555_frame_000104_det_02_cls_4_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000556_frame_000104_det_04_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000557_frame_000104_det_05_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000558_frame_000105_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000559_frame_000105_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000560_frame_000105_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000561_frame_000105_det_04_cls_4_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000562_frame_000105_det_05_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000563_frame_000106_det_00_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000564_frame_000106_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000565_frame_000106_det_03_cls_3_conf_0.66.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000566_frame_000106_det_04_cls_3_conf_0.66.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000567_frame_000107_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000568_frame_000107_det_01_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000569_frame_000108_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000570_frame_000108_det_01_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000571_frame_000108_det_02_cls_3_conf_0.74.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000572_frame_000108_det_03_cls_4_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000573_frame_000109_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000574_frame_000109_det_01_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000575_frame_000109_det_02_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000576_frame_000110_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000577_frame_000110_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000578_frame_000110_det_02_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000579_frame_000111_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000580_frame_000111_det_01_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000581_frame_000111_det_03_cls_3_conf_0.79.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000582_frame_000112_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000583_frame_000112_det_02_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000584_frame_000112_det_03_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000586_frame_000113_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000587_frame_000113_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000588_frame_000113_det_04_cls_4_conf_0.65.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000589_frame_000114_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000590_frame_000114_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000591_frame_000115_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000592_frame_000115_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000593_frame_000115_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000594_frame_000116_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000595_frame_000116_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000596_frame_000116_det_02_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000597_frame_000116_det_04_cls_4_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000598_frame_000117_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000599_frame_000117_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000600_frame_000117_det_03_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000601_frame_000117_det_04_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000602_frame_000118_det_00_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000603_frame_000118_det_02_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000604_frame_000118_det_03_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000605_frame_000119_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000606_frame_000119_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000607_frame_000119_det_03_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000608_frame_000120_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000609_frame_000120_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000610_frame_000120_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000611_frame_000120_det_05_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000612_frame_000121_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000613_frame_000121_det_02_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000614_frame_000121_det_03_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000616_frame_000121_det_05_cls_3_conf_0.74.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000617_frame_000122_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000618_frame_000122_det_02_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000619_frame_000122_det_03_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000620_frame_000123_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000621_frame_000123_det_01_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000622_frame_000123_det_04_cls_3_conf_0.80.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000623_frame_000124_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000624_frame_000124_det_01_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000625_frame_000124_det_04_cls_3_conf_0.75.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000626_frame_000124_det_05_cls_4_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000627_frame_000125_det_00_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000628_frame_000125_det_01_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000629_frame_000125_det_02_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000630_frame_000125_det_03_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000631_frame_000126_det_00_cls_3_conf_0.96.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000632_frame_000126_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000633_frame_000126_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000634_frame_000126_det_04_cls_3_conf_0.78.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000635_frame_000126_det_05_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000636_frame_000127_det_00_cls_3_conf_0.95.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000637_frame_000127_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000638_frame_000127_det_02_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000639_frame_000127_det_04_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000640_frame_000127_det_05_cls_3_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000641_frame_000128_det_00_cls_3_conf_0.95.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000642_frame_000128_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000643_frame_000128_det_02_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000644_frame_000128_det_03_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000645_frame_000129_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000646_frame_000129_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000647_frame_000129_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000648_frame_000129_det_03_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000649_frame_000129_det_05_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000650_frame_000130_det_00_cls_3_conf_0.95.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000651_frame_000130_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000652_frame_000130_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000653_frame_000130_det_04_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000654_frame_000131_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000655_frame_000131_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000656_frame_000131_det_02_cls_4_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000657_frame_000131_det_04_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000658_frame_000131_det_05_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000659_frame_000132_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000660_frame_000132_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000661_frame_000132_det_02_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000662_frame_000132_det_04_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000663_frame_000132_det_05_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000664_frame_000132_det_06_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000665_frame_000133_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000666_frame_000133_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000667_frame_000133_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000668_frame_000133_det_03_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000669_frame_000133_det_04_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000670_frame_000133_det_05_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000671_frame_000133_det_06_cls_3_conf_0.75.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000672_frame_000134_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000673_frame_000134_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000674_frame_000134_det_03_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000675_frame_000134_det_04_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000676_frame_000135_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000677_frame_000135_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000678_frame_000135_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000679_frame_000135_det_05_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000680_frame_000135_det_06_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000681_frame_000135_det_07_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000682_frame_000136_det_00_cls_3_conf_0.95.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000683_frame_000136_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000684_frame_000136_det_03_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000685_frame_000136_det_04_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000686_frame_000136_det_05_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000687_frame_000136_det_06_cls_3_conf_0.70.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000688_frame_000137_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000689_frame_000137_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000690_frame_000137_det_02_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000691_frame_000137_det_04_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000692_frame_000138_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000693_frame_000138_det_02_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000694_frame_000138_det_03_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000695_frame_000138_det_04_cls_4_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000696_frame_000139_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000697_frame_000139_det_02_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000698_frame_000139_det_04_cls_3_conf_0.79.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000699_frame_000139_det_05_cls_4_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000700_frame_000139_det_06_cls_3_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000701_frame_000140_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000702_frame_000140_det_02_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000703_frame_000140_det_03_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000704_frame_000140_det_05_cls_3_conf_0.69.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000705_frame_000140_det_06_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000706_frame_000141_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000707_frame_000141_det_01_cls_4_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000708_frame_000141_det_02_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000709_frame_000141_det_04_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000710_frame_000141_det_05_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000711_frame_000141_det_06_cls_3_conf_0.74.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000712_frame_000142_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000713_frame_000142_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000714_frame_000142_det_02_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000715_frame_000143_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000716_frame_000143_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000717_frame_000143_det_03_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000718_frame_000143_det_04_cls_3_conf_0.78.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000719_frame_000143_det_05_cls_3_conf_0.65.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000720_frame_000144_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000721_frame_000144_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000722_frame_000144_det_02_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000723_frame_000144_det_03_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000724_frame_000144_det_05_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000725_frame_000144_det_06_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000726_frame_000144_det_07_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000727_frame_000145_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000728_frame_000145_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000729_frame_000145_det_02_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000730_frame_000145_det_03_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000731_frame_000145_det_05_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000732_frame_000145_det_06_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000733_frame_000145_det_07_cls_3_conf_0.66.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000734_frame_000146_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000735_frame_000146_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000736_frame_000146_det_02_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000737_frame_000146_det_04_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000738_frame_000146_det_05_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000739_frame_000146_det_06_cls_3_conf_0.80.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000740_frame_000146_det_07_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000741_frame_000147_det_00_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000742_frame_000147_det_01_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000743_frame_000147_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000744_frame_000147_det_03_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000746_frame_000147_det_06_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000747_frame_000147_det_07_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000748_frame_000147_det_08_cls_3_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000749_frame_000148_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000750_frame_000148_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000751_frame_000148_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000752_frame_000148_det_03_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000753_frame_000148_det_05_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000754_frame_000148_det_06_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000755_frame_000149_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000756_frame_000149_det_02_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000757_frame_000149_det_03_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000758_frame_000149_det_04_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000759_frame_000149_det_05_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000760_frame_000149_det_06_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000761_frame_000149_det_07_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000762_frame_000150_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000763_frame_000150_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000764_frame_000150_det_02_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000765_frame_000150_det_04_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000766_frame_000150_det_05_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000767_frame_000150_det_06_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000768_frame_000151_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000769_frame_000151_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000770_frame_000151_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000771_frame_000151_det_04_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000772_frame_000151_det_05_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000773_frame_000151_det_06_cls_3_conf_0.80.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000774_frame_000151_det_08_cls_3_conf_0.70.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000775_frame_000152_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000776_frame_000152_det_02_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000777_frame_000152_det_03_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000778_frame_000152_det_04_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000779_frame_000152_det_05_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000780_frame_000153_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000781_frame_000153_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000782_frame_000153_det_03_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000783_frame_000153_det_04_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000784_frame_000153_det_05_cls_3_conf_0.78.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000785_frame_000153_det_06_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000786_frame_000153_det_07_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000787_frame_000153_det_08_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000788_frame_000154_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000789_frame_000154_det_02_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000790_frame_000154_det_03_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000791_frame_000154_det_04_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000792_frame_000154_det_05_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000793_frame_000154_det_06_cls_3_conf_0.82.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000794_frame_000155_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000795_frame_000155_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000796_frame_000155_det_03_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000797_frame_000155_det_04_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000798_frame_000155_det_05_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000799_frame_000156_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000800_frame_000156_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000801_frame_000156_det_03_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000802_frame_000156_det_04_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000803_frame_000156_det_05_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000804_frame_000157_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000805_frame_000157_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000806_frame_000157_det_03_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000807_frame_000157_det_04_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000808_frame_000157_det_05_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000809_frame_000157_det_06_cls_3_conf_0.65.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000810_frame_000158_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000811_frame_000158_det_02_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000812_frame_000158_det_03_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000813_frame_000158_det_04_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000814_frame_000158_det_05_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000815_frame_000159_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000816_frame_000159_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000817_frame_000159_det_03_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000818_frame_000159_det_04_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000819_frame_000160_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000820_frame_000160_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000821_frame_000160_det_03_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000822_frame_000160_det_04_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000823_frame_000160_det_05_cls_3_conf_0.67.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000824_frame_000161_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000825_frame_000161_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000826_frame_000161_det_03_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000827_frame_000161_det_04_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000828_frame_000161_det_05_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000829_frame_000161_det_06_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000830_frame_000162_det_00_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000831_frame_000162_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000832_frame_000162_det_03_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000833_frame_000162_det_04_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000834_frame_000162_det_05_cls_3_conf_0.68.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000835_frame_000163_det_00_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000836_frame_000163_det_02_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000837_frame_000163_det_03_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000838_frame_000163_det_04_cls_3_conf_0.82.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000839_frame_000163_det_05_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000840_frame_000163_det_06_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000841_frame_000163_det_07_cls_3_conf_0.71.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000842_frame_000164_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000843_frame_000164_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000844_frame_000164_det_03_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000845_frame_000164_det_04_cls_3_conf_0.65.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000846_frame_000165_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000847_frame_000165_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000848_frame_000165_det_03_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000849_frame_000165_det_04_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000850_frame_000165_det_05_cls_3_conf_0.74.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000851_frame_000165_det_06_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000852_frame_000166_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000853_frame_000166_det_01_cls_3_conf_0.83.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000854_frame_000166_det_03_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000855_frame_000166_det_04_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000856_frame_000166_det_05_cls_3_conf_0.71.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000857_frame_000167_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000858_frame_000167_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000859_frame_000167_det_02_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000860_frame_000167_det_03_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000861_frame_000167_det_05_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000862_frame_000168_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000863_frame_000168_det_02_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000864_frame_000168_det_03_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000865_frame_000168_det_04_cls_3_conf_0.83.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000866_frame_000168_det_05_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000867_frame_000168_det_06_cls_3_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000868_frame_000169_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000869_frame_000169_det_01_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000870_frame_000169_det_03_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000871_frame_000169_det_04_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000872_frame_000169_det_05_cls_3_conf_0.82.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000873_frame_000169_det_06_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000874_frame_000170_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000875_frame_000170_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000876_frame_000170_det_03_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000877_frame_000170_det_04_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000878_frame_000170_det_06_cls_3_conf_0.71.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000879_frame_000171_det_00_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000880_frame_000171_det_01_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000881_frame_000171_det_02_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000882_frame_000171_det_04_cls_3_conf_0.79.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000883_frame_000171_det_05_cls_3_conf_0.76.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000885_frame_000172_det_00_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000886_frame_000172_det_02_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000887_frame_000172_det_03_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000888_frame_000172_det_04_cls_3_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000889_frame_000173_det_00_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000890_frame_000173_det_01_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000891_frame_000173_det_02_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000892_frame_000174_det_00_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000893_frame_000174_det_01_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000894_frame_000175_det_00_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000895_frame_000176_det_00_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000896_frame_000177_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000897_frame_000178_det_00_cls_3_conf_0.80.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000898_frame_000178_det_01_cls_3_conf_0.69.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000899_frame_000179_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000900_frame_000179_det_01_cls_3_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000901_frame_000180_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000902_frame_000181_det_00_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000903_frame_000181_det_01_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000904_frame_000181_det_02_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000905_frame_000182_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000907_frame_000183_det_00_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000908_frame_000183_det_01_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000909_frame_000183_det_03_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000910_frame_000183_det_05_cls_3_conf_0.69.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000911_frame_000184_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000912_frame_000184_det_01_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000913_frame_000184_det_02_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000914_frame_000184_det_03_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000915_frame_000184_det_05_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000916_frame_000184_det_06_cls_3_conf_0.69.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000917_frame_000185_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000918_frame_000185_det_01_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000919_frame_000185_det_02_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000920_frame_000185_det_03_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000921_frame_000185_det_05_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000922_frame_000186_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000923_frame_000186_det_01_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000924_frame_000186_det_02_cls_3_conf_0.80.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000925_frame_000186_det_03_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000926_frame_000187_det_00_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000927_frame_000187_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000928_frame_000187_det_02_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000929_frame_000187_det_03_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000930_frame_000187_det_04_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000931_frame_000188_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000932_frame_000188_det_01_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000933_frame_000188_det_02_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000934_frame_000188_det_03_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000935_frame_000188_det_04_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000936_frame_000189_det_00_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000937_frame_000189_det_01_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000938_frame_000189_det_02_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000939_frame_000189_det_03_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000940_frame_000189_det_04_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000941_frame_000189_det_05_cls_3_conf_0.71.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000942_frame_000190_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000943_frame_000190_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000944_frame_000190_det_02_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000945_frame_000190_det_03_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000946_frame_000190_det_04_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000947_frame_000190_det_05_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000948_frame_000190_det_06_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000949_frame_000190_det_07_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000950_frame_000191_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000951_frame_000191_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000952_frame_000191_det_02_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000953_frame_000191_det_03_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000954_frame_000191_det_04_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000955_frame_000191_det_05_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000956_frame_000191_det_08_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000957_frame_000192_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000958_frame_000192_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000959_frame_000192_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000960_frame_000192_det_03_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000961_frame_000192_det_04_cls_3_conf_0.80.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000962_frame_000192_det_05_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000963_frame_000193_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000964_frame_000193_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000965_frame_000193_det_02_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000966_frame_000193_det_03_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000967_frame_000193_det_05_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000968_frame_000194_det_00_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000969_frame_000194_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000970_frame_000194_det_02_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000971_frame_000194_det_04_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000972_frame_000194_det_05_cls_3_conf_0.78.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000973_frame_000194_det_06_cls_3_conf_0.75.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000974_frame_000194_det_07_cls_3_conf_0.71.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000975_frame_000195_det_00_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000976_frame_000195_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000977_frame_000195_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000978_frame_000195_det_03_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000979_frame_000195_det_04_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000980_frame_000195_det_05_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000981_frame_000195_det_06_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000982_frame_000195_det_07_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000983_frame_000195_det_08_cls_3_conf_0.78.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000984_frame_000195_det_10_cls_3_conf_0.75.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000985_frame_000196_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000986_frame_000196_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000987_frame_000196_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000988_frame_000196_det_03_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000989_frame_000196_det_04_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000990_frame_000196_det_05_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000991_frame_000196_det_06_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000992_frame_000196_det_08_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000993_frame_000196_det_09_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000994_frame_000197_det_00_cls_3_conf_0.95.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000995_frame_000197_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000996_frame_000197_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000997_frame_000197_det_03_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0000998_frame_000197_det_04_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0000999_frame_000197_det_05_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001000_frame_000197_det_06_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001001_frame_000197_det_09_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001002_frame_000198_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001003_frame_000198_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001004_frame_000198_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001005_frame_000198_det_03_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001006_frame_000198_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001007_frame_000198_det_05_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001008_frame_000198_det_06_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001009_frame_000198_det_07_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001010_frame_000198_det_08_cls_3_conf_0.74.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001011_frame_000199_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001012_frame_000199_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001013_frame_000199_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001014_frame_000199_det_03_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001015_frame_000199_det_04_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001016_frame_000199_det_05_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001017_frame_000199_det_07_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001018_frame_000199_det_08_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001019_frame_000199_det_09_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001020_frame_000200_det_00_cls_3_conf_0.96.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001021_frame_000200_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001022_frame_000200_det_02_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001023_frame_000200_det_03_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001024_frame_000200_det_04_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001025_frame_000200_det_06_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001026_frame_000200_det_07_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001027_frame_000200_det_08_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001028_frame_000200_det_09_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001029_frame_000200_det_10_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001030_frame_000201_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001031_frame_000201_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001032_frame_000201_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001033_frame_000201_det_03_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001034_frame_000201_det_04_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001035_frame_000201_det_05_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001036_frame_000201_det_06_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001037_frame_000201_det_07_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001038_frame_000201_det_08_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001039_frame_000201_det_09_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001040_frame_000202_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001041_frame_000202_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001042_frame_000202_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001043_frame_000202_det_03_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001044_frame_000202_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001045_frame_000202_det_05_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001046_frame_000202_det_06_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001047_frame_000202_det_08_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001048_frame_000202_det_09_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001049_frame_000203_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001050_frame_000203_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001051_frame_000203_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001052_frame_000203_det_03_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001053_frame_000203_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001054_frame_000203_det_06_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001055_frame_000203_det_07_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001056_frame_000203_det_10_cls_3_conf_0.76.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001057_frame_000203_det_11_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001058_frame_000203_det_12_cls_3_conf_0.71.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001059_frame_000204_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001060_frame_000204_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001061_frame_000204_det_02_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001062_frame_000204_det_03_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001063_frame_000204_det_04_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001064_frame_000204_det_06_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001065_frame_000204_det_07_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001066_frame_000204_det_08_cls_3_conf_0.79.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001067_frame_000205_det_00_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001068_frame_000205_det_01_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001069_frame_000205_det_02_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001070_frame_000205_det_03_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001071_frame_000205_det_05_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001072_frame_000205_det_07_cls_3_conf_0.73.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001073_frame_000205_det_08_cls_3_conf_0.67.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001074_frame_000206_det_00_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001075_frame_000206_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001076_frame_000206_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001077_frame_000206_det_03_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001078_frame_000206_det_04_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001079_frame_000206_det_06_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001080_frame_000206_det_07_cls_3_conf_0.74.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001081_frame_000207_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001082_frame_000207_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001083_frame_000207_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001084_frame_000207_det_03_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001086_frame_000207_det_06_cls_3_conf_0.82.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001087_frame_000207_det_07_cls_3_conf_0.79.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001088_frame_000207_det_08_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001089_frame_000208_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001090_frame_000208_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001091_frame_000208_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001092_frame_000208_det_03_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001093_frame_000208_det_04_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001094_frame_000208_det_05_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001095_frame_000208_det_06_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001096_frame_000208_det_08_cls_4_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001097_frame_000209_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001098_frame_000209_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001099_frame_000209_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001100_frame_000209_det_03_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001101_frame_000209_det_04_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001102_frame_000209_det_05_cls_4_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001103_frame_000209_det_07_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001104_frame_000210_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001105_frame_000210_det_01_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001106_frame_000210_det_02_cls_3_conf_0.80.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001107_frame_000210_det_03_cls_3_conf_0.69.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001109_frame_000211_det_00_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001110_frame_000211_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001111_frame_000211_det_02_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001112_frame_000211_det_04_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001113_frame_000212_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001114_frame_000212_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001115_frame_000212_det_03_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001116_frame_000212_det_04_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001117_frame_000213_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001118_frame_000213_det_02_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001119_frame_000213_det_03_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001120_frame_000213_det_04_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001121_frame_000213_det_05_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001122_frame_000214_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001123_frame_000214_det_02_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001124_frame_000214_det_03_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001125_frame_000214_det_04_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001126_frame_000214_det_05_cls_3_conf_0.66.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001127_frame_000214_det_06_cls_3_conf_0.66.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001128_frame_000215_det_01_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001129_frame_000215_det_02_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001130_frame_000215_det_03_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001131_frame_000215_det_04_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001132_frame_000215_det_05_cls_3_conf_0.78.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001133_frame_000215_det_06_cls_3_conf_0.66.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001134_frame_000216_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001135_frame_000216_det_02_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001136_frame_000216_det_03_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001137_frame_000216_det_04_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001138_frame_000216_det_05_cls_3_conf_0.82.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001139_frame_000216_det_06_cls_3_conf_0.67.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001140_frame_000217_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001141_frame_000217_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001142_frame_000217_det_03_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001143_frame_000217_det_04_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001144_frame_000217_det_05_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001145_frame_000217_det_06_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001146_frame_000217_det_07_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001147_frame_000218_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001148_frame_000218_det_02_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001149_frame_000218_det_03_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001150_frame_000218_det_04_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001151_frame_000218_det_05_cls_3_conf_0.72.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001152_frame_000218_det_06_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001153_frame_000219_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001154_frame_000219_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001155_frame_000219_det_03_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001156_frame_000219_det_04_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001157_frame_000219_det_05_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001158_frame_000219_det_06_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001159_frame_000219_det_07_cls_3_conf_0.79.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001160_frame_000219_det_08_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001161_frame_000220_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001162_frame_000220_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001163_frame_000220_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001164_frame_000220_det_03_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001165_frame_000220_det_04_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001166_frame_000220_det_05_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001167_frame_000220_det_06_cls_3_conf_0.79.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001168_frame_000220_det_07_cls_3_conf_0.78.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001169_frame_000220_det_08_cls_3_conf_0.71.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001170_frame_000221_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001171_frame_000221_det_02_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001172_frame_000221_det_03_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001173_frame_000221_det_04_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001174_frame_000221_det_05_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001175_frame_000221_det_06_cls_3_conf_0.69.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001177_frame_000222_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001178_frame_000222_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001179_frame_000222_det_03_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001180_frame_000222_det_04_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001181_frame_000222_det_06_cls_3_conf_0.73.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001182_frame_000222_det_07_cls_3_conf_0.71.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001183_frame_000222_det_08_cls_3_conf_0.70.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001184_frame_000223_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001185_frame_000223_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001186_frame_000223_det_03_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001187_frame_000223_det_04_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001188_frame_000223_det_05_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001189_frame_000223_det_06_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001190_frame_000223_det_07_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001191_frame_000224_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001192_frame_000224_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001193_frame_000224_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001194_frame_000224_det_04_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001195_frame_000224_det_05_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001196_frame_000224_det_06_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001197_frame_000224_det_07_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001198_frame_000225_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001199_frame_000225_det_02_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001200_frame_000225_det_03_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001201_frame_000225_det_04_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001202_frame_000225_det_06_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001203_frame_000225_det_07_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001204_frame_000226_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001205_frame_000226_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001206_frame_000226_det_02_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001207_frame_000226_det_03_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001208_frame_000226_det_04_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001209_frame_000226_det_05_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001210_frame_000226_det_07_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001211_frame_000227_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001212_frame_000227_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001213_frame_000227_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001214_frame_000227_det_04_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001215_frame_000227_det_06_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001216_frame_000227_det_07_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001217_frame_000228_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001218_frame_000228_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001219_frame_000228_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001220_frame_000228_det_04_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001221_frame_000228_det_06_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001222_frame_000228_det_07_cls_3_conf_0.83.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001223_frame_000228_det_08_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001224_frame_000228_det_09_cls_3_conf_0.70.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001225_frame_000229_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001226_frame_000229_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001227_frame_000229_det_03_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001228_frame_000229_det_04_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001229_frame_000229_det_06_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001230_frame_000229_det_07_cls_3_conf_0.80.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001231_frame_000229_det_08_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001232_frame_000229_det_09_cls_3_conf_0.66.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001233_frame_000230_det_00_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001234_frame_000230_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001235_frame_000230_det_02_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001236_frame_000230_det_03_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001237_frame_000230_det_05_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001238_frame_000230_det_07_cls_3_conf_0.76.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001239_frame_000231_det_00_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001240_frame_000231_det_01_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001241_frame_000231_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001242_frame_000231_det_03_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001243_frame_000231_det_06_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001244_frame_000231_det_07_cls_3_conf_0.77.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001245_frame_000232_det_00_cls_3_conf_0.96.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001246_frame_000232_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001247_frame_000232_det_03_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001248_frame_000232_det_04_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001249_frame_000232_det_05_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001250_frame_000232_det_07_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001251_frame_000232_det_08_cls_3_conf_0.75.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001252_frame_000233_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001253_frame_000233_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001254_frame_000233_det_03_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001255_frame_000233_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001256_frame_000233_det_05_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001257_frame_000233_det_07_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001258_frame_000234_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001259_frame_000234_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001260_frame_000234_det_03_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001261_frame_000234_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001262_frame_000234_det_05_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001263_frame_000234_det_07_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001264_frame_000234_det_08_cls_3_conf_0.70.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001265_frame_000234_det_09_cls_3_conf_0.68.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001266_frame_000235_det_01_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001267_frame_000235_det_02_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001268_frame_000235_det_03_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001269_frame_000235_det_04_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001270_frame_000235_det_05_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001272_frame_000235_det_07_cls_3_conf_0.67.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001273_frame_000236_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001274_frame_000236_det_02_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001275_frame_000236_det_03_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001276_frame_000236_det_04_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001277_frame_000236_det_05_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001278_frame_000237_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001279_frame_000237_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001280_frame_000237_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001281_frame_000237_det_03_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001282_frame_000237_det_04_cls_3_conf_0.76.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001283_frame_000237_det_05_cls_3_conf_0.75.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001284_frame_000238_det_01_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001285_frame_000238_det_02_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001286_frame_000238_det_03_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001287_frame_000238_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001288_frame_000238_det_05_cls_3_conf_0.83.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001289_frame_000239_det_00_cls_3_conf_0.95.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001290_frame_000239_det_02_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001291_frame_000239_det_03_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001292_frame_000239_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001293_frame_000239_det_05_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001294_frame_000239_det_06_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001295_frame_000239_det_08_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001296_frame_000240_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001297_frame_000240_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001298_frame_000240_det_03_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001299_frame_000240_det_04_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001300_frame_000240_det_05_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001301_frame_000240_det_08_cls_3_conf_0.73.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001302_frame_000240_det_09_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001303_frame_000241_det_00_cls_3_conf_0.95.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001304_frame_000241_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001305_frame_000241_det_02_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001306_frame_000241_det_03_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001307_frame_000241_det_04_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001308_frame_000241_det_06_cls_3_conf_0.84.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001309_frame_000241_det_07_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001310_frame_000242_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001311_frame_000242_det_02_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001312_frame_000242_det_03_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001313_frame_000242_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001314_frame_000242_det_05_cls_3_conf_0.85.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001315_frame_000242_det_06_cls_3_conf_0.83.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001316_frame_000243_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001317_frame_000243_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001318_frame_000243_det_03_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001319_frame_000243_det_04_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001320_frame_000243_det_05_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001321_frame_000243_det_06_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001322_frame_000243_det_07_cls_3_conf_0.75.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001323_frame_000244_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001324_frame_000244_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001325_frame_000244_det_03_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001326_frame_000244_det_04_cls_3_conf_0.82.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001327_frame_000244_det_05_cls_3_conf_0.80.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001328_frame_000244_det_06_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001329_frame_000244_det_07_cls_3_conf_0.79.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001330_frame_000245_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001331_frame_000245_det_02_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001332_frame_000245_det_03_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001333_frame_000245_det_04_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001334_frame_000245_det_06_cls_3_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001335_frame_000246_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001336_frame_000246_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001337_frame_000246_det_03_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001338_frame_000246_det_04_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001339_frame_000246_det_05_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001340_frame_000246_det_06_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001341_frame_000246_det_07_cls_3_conf_0.67.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001342_frame_000247_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001343_frame_000247_det_02_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001344_frame_000247_det_03_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001345_frame_000247_det_04_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001346_frame_000247_det_05_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001347_frame_000247_det_06_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001348_frame_000247_det_07_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001349_frame_000248_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001350_frame_000248_det_02_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001351_frame_000248_det_03_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001352_frame_000248_det_04_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001353_frame_000248_det_05_cls_3_conf_0.88.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001354_frame_000248_det_06_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001355_frame_000248_det_07_cls_3_conf_0.81.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001356_frame_000249_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001357_frame_000249_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001358_frame_000249_det_03_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001359_frame_000249_det_04_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001360_frame_000249_det_05_cls_3_conf_0.83.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001361_frame_000249_det_07_cls_3_conf_0.74.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001362_frame_000250_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001363_frame_000250_det_02_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001364_frame_000250_det_03_cls_3_conf_0.84.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001365_frame_000250_det_04_cls_3_conf_0.82.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001366_frame_000251_det_00_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001367_frame_000251_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001368_frame_000251_det_03_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001369_frame_000251_det_04_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001370_frame_000252_det_00_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001371_frame_000252_det_02_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001372_frame_000252_det_03_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001373_frame_000252_det_04_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001374_frame_000252_det_06_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001375_frame_000253_det_01_cls_3_conf_0.94.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001376_frame_000253_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001377_frame_000253_det_03_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001378_frame_000253_det_05_cls_3_conf_0.83.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001379_frame_000253_det_06_cls_3_conf_0.82.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001380_frame_000254_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001381_frame_000254_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001382_frame_000254_det_03_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001383_frame_000254_det_04_cls_3_conf_0.78.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001384_frame_000254_det_06_cls_3_conf_0.68.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001385_frame_000255_det_02_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001386_frame_000255_det_03_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001387_frame_000255_det_04_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001388_frame_000255_det_05_cls_3_conf_0.80.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001389_frame_000255_det_06_cls_3_conf_0.66.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001390_frame_000256_det_02_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001391_frame_000256_det_03_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001392_frame_000256_det_04_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001393_frame_000256_det_05_cls_3_conf_0.81.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001394_frame_000257_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001395_frame_000257_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001396_frame_000257_det_04_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001397_frame_000257_det_05_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001398_frame_000257_det_06_cls_3_conf_0.68.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001399_frame_000258_det_01_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001400_frame_000258_det_02_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001401_frame_000258_det_04_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001402_frame_000258_det_05_cls_3_conf_0.76.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001403_frame_000258_det_06_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001404_frame_000258_det_07_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001405_frame_000259_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001406_frame_000259_det_02_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001407_frame_000259_det_03_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001408_frame_000259_det_05_cls_3_conf_0.83.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001409_frame_000259_det_06_cls_3_conf_0.72.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001410_frame_000260_det_01_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001411_frame_000260_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001412_frame_000260_det_03_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001413_frame_000260_det_04_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001414_frame_000260_det_05_cls_3_conf_0.86.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001415_frame_000260_det_07_cls_3_conf_0.71.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001416_frame_000261_det_00_cls_3_conf_0.93.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001417_frame_000261_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001418_frame_000261_det_02_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001419_frame_000261_det_04_cls_3_conf_0.89.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001420_frame_000261_det_06_cls_3_conf_0.68.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001421_frame_000262_det_01_cls_3_conf_0.93.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001422_frame_000262_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001423_frame_000262_det_03_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001424_frame_000262_det_04_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001426_frame_000263_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001427_frame_000263_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001428_frame_000263_det_03_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001429_frame_000263_det_04_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001430_frame_000264_det_01_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001431_frame_000264_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001432_frame_000264_det_03_cls_3_conf_0.87.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001433_frame_000264_det_04_cls_3_conf_0.86.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001434_frame_000264_det_05_cls_3_conf_0.78.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001435_frame_000265_det_01_cls_3_conf_0.94.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001436_frame_000265_det_02_cls_3_conf_0.92.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001437_frame_000265_det_03_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001438_frame_000265_det_04_cls_3_conf_0.91.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001439_frame_000265_det_05_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001441_frame_000266_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001442_frame_000266_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001443_frame_000266_det_03_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001444_frame_000266_det_04_cls_3_conf_0.87.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001445_frame_000266_det_05_cls_3_conf_0.75.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001447_frame_000267_det_01_cls_3_conf_0.92.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001448_frame_000267_det_02_cls_3_conf_0.90.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001449_frame_000267_det_03_cls_3_conf_0.88.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001450_frame_000267_det_04_cls_3_conf_0.77.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001452_frame_000267_det_06_cls_3_conf_0.66.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001453_frame_000268_det_01_cls_3_conf_0.91.jpg,a basketball player wearing a white outfit
+players_dataset/crop_0001454_frame_000268_det_02_cls_3_conf_0.90.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001455_frame_000268_det_03_cls_3_conf_0.89.jpg,a basketball player wearing purple and black outfit
+players_dataset/crop_0001456_frame_000268_det_04_cls_3_conf_0.85.jpg,a basketball player wearing a white outfit
