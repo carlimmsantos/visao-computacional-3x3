@@ -1,0 +1,5 @@
+video,inicio,fim,motivo
+Jogo1_TimeA_vs_TimeB.mp4,00:05:10,00:05:45,timeout
+Jogo1_TimeA_vs_TimeB.mp4,00:12:30,00:14:00,intervalo_entre_periodos
+Jogo1_TimeA_vs_TimeB.mp4,00:20:15,00:20:40,jogador_caido
+Jogo2_TimeC_vs_TimeD.mp4,00:02:00,00:02:20,timeout
