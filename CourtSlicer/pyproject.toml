@@ -1,0 +1,18 @@
+[project]
+name = "courtslicer"
+version = "0.2.0"
+description = "Flag basketball plays and cut video into clips, organized by match"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "python-vlc>=3.0.20123",
+]
+
+[project.scripts]
+court-slicer = "court_slicer:main"
+
+[tool.uv]
+package = true
+
+[tool.setuptools]
+py-modules = ["court_slicer"]
