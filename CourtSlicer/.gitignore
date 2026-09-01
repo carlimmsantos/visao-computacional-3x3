@@ -1,0 +1,11 @@
+__pycache__/
+*.py[oc]
+*.egg-info
+.venv
+uv.lock
+
+videos_entrada/*
+!videos_entrada/.gitkeep
+
+videos_saida/*
+!videos_saida/.gitkeep
