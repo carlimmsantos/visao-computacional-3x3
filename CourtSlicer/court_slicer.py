@@ -1,472 +1,1516 @@
-"""CourtSlicer — flag basketball plays and cut video into clips."""
+"""
+CourtSlicer
+===========
+
+Ferramenta para revisar vídeos de partidas e marcar intervalos de tempo morto
+que depois serão removidos pelo script `Corte_videos/remover_trechos.py`.
+
+REQUISITOS
+----------
+- Python
+- mpv
+- ffmpeg / ffprobe
+
+No Ubuntu/Pop!_OS:
+
+    sudo apt install mpv ffmpeg
+
+A instalação do ambiente virtual do projeto pode ser feita com:
+
+    cd CourtSlicer
+    bash install.sh
+
+
+COMO EXECUTAR
+-------------
+Entre na pasta CourtSlicer:
+
+    cd CourtSlicer
+
+Depois execute:
+
+    .venv/bin/court-slicer \
+      "../Corte_videos/partidas_cortadas/<PASTA_DO_TORNEIO>/<VIDEO>.mp4"
+
+Exemplo:
+
+    .venv/bin/court-slicer \
+      "../Corte_videos/partidas_cortadas/Torneio 3x3 - LPB/Jogo11_IMPERIAL_vs_MNC.mp4"
+
+
+CONTROLES
+---------
+- A       : voltar 5 segundos
+- D       : avançar 5 segundos
+- Espaço  : play / pause
+- F       : marcar início ou fim de um intervalo
+- +       : aumentar velocidade
+- -       : diminuir velocidade
+- Ctrl+Z  : desfazer última marcação
+- Q / Esc : sair
+
+Também é possível usar os botões da interface.
+
+A barra de progresso é clicável:
+- clique em qualquer ponto para ir diretamente até aquele momento do vídeo;
+- também é possível arrastar o marcador normalmente.
+
+A velocidade pode ser alterada pelo seletor da interface, até 4x.
+
+
+COMO MARCAR OS CORTES
+---------------------
+As marcações devem ser feitas sempre em pares:
+
+    F -> início do trecho que deve ser removido
+    F -> fim do trecho que deve ser removido
+
+Exemplo:
+
+    00:04:17 -> início de timeout
+    00:04:53 -> fim do timeout
+
+A interface mostra automaticamente:
+
+    1. 00:04:17 -> 00:04:53
+
+Se apenas o início tiver sido marcado, será mostrado:
+
+    1. 00:04:17 -> aguardando fim
+
+O botão também alterna automaticamente entre:
+
+    "Marcar início"
+    "Marcar fim"
+
+
+O QUE DEVE SER MARCADO
+----------------------
+Marcar apenas pausas reais / tempo morto, por exemplo:
+
+- timeout;
+- pausa técnica;
+- atendimento a jogador lesionado;
+- jogador caído quando o jogo realmente é interrompido;
+- discussão prolongada com arbitragem;
+- interrupção longa da partida;
+- bola que sai e demora significativamente para voltar.
+
+Não marcar automaticamente:
+
+- toda falta;
+- toda bola fora;
+- reposição rápida;
+- pequenos momentos de organização da posse;
+- situações em que o jogo continua normalmente.
+
+
+RESULTADO
+---------
+Ao fechar o CourtSlicer, os intervalos marcados são exibidos no terminal
+também no formato utilizado pelo CSV de cortes:
+
+    video,inicio,fim,motivo
+
+Exemplo:
+
+    Jogo11_IMPERIAL_vs_MNC.mp4,00:04:17,00:04:53,tempo_morto
+
+Copie os intervalos necessários para:
+
+    Corte_videos/templates/cortes_internos.csv
+
+ou para o CSV específico da sua dupla.
+
+
+IMPORTANTE
+----------
+O CourtSlicer serve para localizar e registrar os timestamps.
+
+A remoção final dos trechos deve ser feita com:
+
+    cd Corte_videos
+
+    python remover_trechos.py \
+      --csv templates/cortes_internos.csv \
+      --videos_dir partidas_cortadas \
+      --output_dir partidas_limpas
+
+Os vídeos em `partidas_cortadas/` são usados como fonte original.
+
+Os vídeos resultantes são gerados em:
+
+    partidas_limpas/
+
+Não commitar arquivos .mp4 no repositório.
+"""
 
 import argparse
 import json
-import re
+import os
+import socket
 import subprocess
 import sys
-import platform
+import tempfile
+import time
 from pathlib import Path
 
 import tkinter as tk
-import vlc
+from tkinter import ttk
+
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 VIDEOS_ENTRADA = PROJECT_ROOT / "videos_entrada"
-VIDEOS_SAIDA = PROJECT_ROOT / "videos_saida"
 
 MIN_RATE = 0.25
 MAX_RATE = 4.0
 RATE_STEP = 1.25
 
-TRECHO_NAME_RE = re.compile(r"trecho_(\d+)\.mp4$")
 
+# =============================================================================
+# CLI
+# =============================================================================
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Flag plays and cut video clips.")
+    parser = argparse.ArgumentParser(
+        description="Assista ao vídeo e marque intervalos para remoção."
+    )
+
     parser.add_argument(
         "video",
-        nargs="?",
         help=(
-            "Video file: a bare filename is looked up inside videos_entrada/, "
-            "or pass a full/relative path directly."
+            "Arquivo de vídeo. Se informar apenas o nome, "
+            "procura em videos_entrada/."
         ),
     )
-    parser.add_argument(
-        "--editar",
-        metavar="TRECHO",
-        help=(
-            "Reabre um trecho já cortado (ex: videos_saida/partida1/trecho_02.mp4) "
-            "para ajustar o início/fim e regravá-lo."
-        ),
-    )
-    args = parser.parse_args()
-    if not args.video and not args.editar:
-        parser.error("informe um vídeo para cortar, ou --editar <trecho.mp4>")
-    return args
+
+    return parser.parse_args()
 
 
 def resolve_video_path(video_arg: str) -> Path:
-    """Resolve the input video path: bare filename -> videos_entrada/, else as given."""
     given = Path(video_arg)
+
     if given.exists():
         return given.resolve()
 
     candidate = VIDEOS_ENTRADA / given.name
+
     if candidate.exists():
         return candidate.resolve()
 
     return given.resolve()
 
 
-# ── metadata (flags.json) ───────────────────────────────────────────────────
+# =============================================================================
+# Helpers
+# =============================================================================
 
-def metadata_path(out_dir: Path) -> Path:
-    return out_dir / "flags.json"
+def fmt_seconds(seconds: float | int | None) -> str:
+    if seconds is None or seconds < 0:
+        return "--:--"
+
+    total = int(seconds)
+
+    hours, remainder = divmod(total, 3600)
+    minutes, secs = divmod(remainder, 60)
+
+    if hours:
+        return f"{hours:02d}:{minutes:02d}:{secs:02d}"
+
+    return f"{minutes:02d}:{secs:02d}"
 
 
-def load_metadata(out_dir: Path) -> dict:
-    path = metadata_path(out_dir)
-    if not path.exists():
-        raise FileNotFoundError(f"Metadados não encontrados: {path}")
-    return json.loads(path.read_text(encoding="utf-8"))
+def fmt_csv_time(seconds: float) -> str:
+    total = int(seconds)
+
+    hours, remainder = divmod(total, 3600)
+    minutes, secs = divmod(remainder, 60)
+
+    return f"{hours:02d}:{minutes:02d}:{secs:02d}"
 
 
-def save_metadata(out_dir: Path, source_name: str, segments: list[dict]):
-    data = {"source": source_name, "segments": segments}
-    metadata_path(out_dir).write_text(
-        json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
+# =============================================================================
+# MPV IPC
+# =============================================================================
+
+class MPVController:
+
+    def __init__(self, video_path: Path):
+        self.video_path = video_path
+
+        self.sock_path = (
+            Path(tempfile.gettempdir())
+            / f"courtslicer_mpv_{os.getpid()}.sock"
+        )
+
+        self.proc = None
+        self.request_id = 0
 
 
-def update_segment_metadata(out_dir: Path, index: int, start: float, end: float):
-    data = load_metadata(out_dir)
-    for seg in data["segments"]:
-        if seg["index"] == index:
-            seg["start"] = start
-            seg["end"] = end
-            break
-    else:
-        data["segments"].append({"index": index, "start": start, "end": end})
-    data["segments"].sort(key=lambda s: s["index"])
-    metadata_path(out_dir).write_text(
-        json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
+    def start(self, wid: int):
 
+        if self.sock_path.exists():
+            self.sock_path.unlink()
+
+        cmd = [
+            "mpv",
+
+            # vídeo dentro do Canvas do Tk
+            f"--wid={wid}",
+
+            # NO SEU SISTEMA isto corrige a imagem verde
+            "--deinterlace=yes",
+
+            # evita conflito entre teclas do mpv e CourtSlicer
+            "--input-default-bindings=no",
+            "--input-vo-keyboard=no",
+
+            "--force-window=yes",
+            "--keep-open=yes",
+
+            # mpv controlado via socket
+            f"--input-ipc-server={self.sock_path}",
+
+            # remove controles/OSD próprios
+            "--osd-level=0",
+
+            str(self.video_path),
+        ]
+
+        self.proc = subprocess.Popen(
+            cmd,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+
+        deadline = time.time() + 5.0
+
+        while time.time() < deadline:
+
+            if self.sock_path.exists():
+                return
+
+            time.sleep(0.05)
+
+        raise RuntimeError(
+            "O mpv não criou o socket IPC. "
+            "Confirme se 'mpv' está instalado."
+        )
+
+
+    def stop(self):
+
+        try:
+            self.command(["quit"])
+        except Exception:
+            pass
+
+        if self.proc and self.proc.poll() is None:
+
+            try:
+                self.proc.terminate()
+            except Exception:
+                pass
+
+        if self.sock_path.exists():
+
+            try:
+                self.sock_path.unlink()
+            except Exception:
+                pass
+
+
+    def _send(self, payload: dict):
+
+        message = json.dumps(payload).encode("utf-8") + b"\n"
+
+        with socket.socket(
+            socket.AF_UNIX,
+            socket.SOCK_STREAM,
+        ) as sock:
+
+            sock.settimeout(1.0)
+            sock.connect(str(self.sock_path))
+            sock.sendall(message)
+
+            data = b""
+
+            while b"\n" not in data:
+
+                chunk = sock.recv(4096)
+
+                if not chunk:
+                    break
+
+                data += chunk
+
+        if not data:
+            return {}
+
+        line = data.splitlines()[0]
+
+        try:
+            return json.loads(line.decode("utf-8"))
+
+        except Exception:
+            return {}
+
+
+    def command(self, command: list):
+
+        self.request_id += 1
+
+        return self._send(
+            {
+                "command": command,
+                "request_id": self.request_id,
+            }
+        )
+
+
+    def get_property(self, name):
+
+        response = self.command(
+            ["get_property", name]
+        )
+
+        return response.get("data")
+
+
+    def set_property(self, name, value):
+
+        return self.command(
+            ["set_property", name, value]
+        )
+
+
+    def current_time(self):
+
+        value = self.get_property("time-pos")
+
+        if value is None:
+            return 0.0
+
+        return float(value)
+
+
+    def duration(self):
+
+        value = self.get_property("duration")
+
+        if value is None:
+            return 0.0
+
+        return float(value)
+
+
+    def pause_toggle(self):
+
+        self.command(
+            ["cycle", "pause"]
+        )
+
+
+    def seek_relative(self, seconds):
+
+        self.command(
+            [
+                "seek",
+                seconds,
+                "relative",
+                "exact",
+            ]
+        )
+
+
+    def seek_absolute(self, seconds):
+
+        self.command(
+            [
+                "seek",
+                seconds,
+                "absolute",
+                "exact",
+            ]
+        )
+
+
+    def set_speed(self, speed):
+
+        self.set_property(
+            "speed",
+            speed,
+        )
+
+
+# =============================================================================
+# GUI
+# =============================================================================
 
 class CourtSlicerApp(tk.Tk):
-    def __init__(self, video_path: str, edit_range: tuple[float, float] | None = None):
+
+    def __init__(self, video_path: Path):
+
         super().__init__()
-        self.video_path = Path(video_path)
-        self.flags: list[int] = []  # timestamps in ms
-        self.total_ms: int = 0
-        self.rate: float = 1.0
+
+        self.video_path = video_path
+
+        self.mpv = MPVController(
+            video_path
+        )
+
+        # marcações em segundos
+        self.marks: list[float] = []
+
+        self.rate = 1.0
+
         self._quitting = False
+        self._slider_dragging = False
 
-        self.edit_mode = edit_range is not None
-        if self.edit_mode:
-            self.new_start, self.new_end = edit_range
-        else:
-            self.new_start = self.new_end = None
+        # ---------------------------------------------------------------------
+        # Window
+        # ---------------------------------------------------------------------
 
-        self.title("CourtSlicer" + (" — editando trecho" if self.edit_mode else ""))
-        self.resizable(False, False)
-        self.configure(bg="black")
+        self.title(
+            f"CourtSlicer — {video_path.name}"
+        )
 
+        self.geometry("1180x820")
+        self.minsize(850, 650)
+
+        self.configure(
+            bg="#151515"
+        )
+
+        self.resizable(
+            True,
+            True,
+        )
+
+        # ---------------------------------------------------------------------
+        # Style
+        # ---------------------------------------------------------------------
+
+        self._setup_style()
         self._build_ui()
-        self._setup_vlc(video_path)
         self._bind_keys()
 
-        # Embed VLC after window is realized
-        self.after(150, self._embed_vlc)
-        # Start status polling
-        self.after(250, self._update_status)
+        # Canvas precisa existir antes do --wid
+        self.update_idletasks()
+
+        wid = self.video_canvas.winfo_id()
+
+        try:
+
+            self.mpv.start(wid)
+
+        except Exception as exc:
+
+            print(
+                f"[ERRO] Não foi possível iniciar mpv: {exc}"
+            )
+
+            self.destroy()
+            return
+
+        self.after(
+            200,
+            self._update_status,
+        )
+
+
+    # =========================================================================
+    # Style
+    # =========================================================================
+
+    def _setup_style(self):
+
+        style = ttk.Style(self)
+
+        try:
+            style.theme_use("clam")
+        except Exception:
+            pass
+
+        style.configure(
+            "Timeline.Horizontal.TScale",
+            background="#202020",
+            troughcolor="#404040",
+        )
+
+        style.configure(
+            "Speed.TCombobox",
+            padding=4,
+        )
+
+
+    def make_button(
+        self,
+        parent,
+        text,
+        command,
+        width=None,
+        prominent=False,
+    ):
+
+        if prominent:
+            bg = "#3f6ea8"
+            active = "#527fba"
+
+        else:
+            bg = "#303030"
+            active = "#444444"
+
+        return tk.Button(
+            parent,
+            text=text,
+            command=command,
+            width=width,
+            bg=bg,
+            fg="#f2f2f2",
+            activebackground=active,
+            activeforeground="white",
+            relief=tk.FLAT,
+            bd=0,
+            padx=12,
+            pady=7,
+            cursor="hand2",
+            font=("Sans", 10),
+        )
+
+
+    # =========================================================================
+    # Build UI
+    # =========================================================================
 
     def _build_ui(self):
-        self.canvas = tk.Canvas(self, width=1280, height=720, bg="black",
-                                highlightthickness=0)
-        self.canvas.pack()
 
-        self.status_var = tk.StringVar(value="Loading...")
-        self.status_bar = tk.Label(
+        # ---------------------------------------------------------------------
+        # Video
+        # ---------------------------------------------------------------------
+
+        self.video_container = tk.Frame(
             self,
-            textvariable=self.status_var,
-            bg="#1a1a1a",
-            fg="#e0e0e0",
-            font=("Monospace", 11),
-            anchor="w",
+            bg="black",
+        )
+
+        self.video_container.pack(
+            fill=tk.BOTH,
+            expand=True,
+            padx=8,
+            pady=(8, 0),
+        )
+
+        self.video_canvas = tk.Canvas(
+            self.video_container,
+            bg="black",
+            highlightthickness=0,
+        )
+
+        self.video_canvas.pack(
+            fill=tk.BOTH,
+            expand=True,
+        )
+
+        # ---------------------------------------------------------------------
+        # Bottom panel
+        # ---------------------------------------------------------------------
+
+        panel = tk.Frame(
+            self,
+            bg="#202020",
+        )
+
+        panel.pack(
+            fill=tk.X,
+            padx=8,
+            pady=8,
+        )
+
+        # ---------------------------------------------------------------------
+        # Timeline
+        # ---------------------------------------------------------------------
+
+        timeline_row = tk.Frame(
+            panel,
+            bg="#202020",
+        )
+
+        timeline_row.pack(
+            fill=tk.X,
+            padx=10,
+            pady=(10, 4),
+        )
+
+        self.current_label = tk.Label(
+            timeline_row,
+            text="00:00",
+            bg="#202020",
+            fg="#eeeeee",
+            font=("Monospace", 10),
+            width=8,
+        )
+
+        self.current_label.pack(
+            side=tk.LEFT,
+        )
+
+        self.seek_var = tk.DoubleVar(
+            value=0
+        )
+
+        self.seek_slider = ttk.Scale(
+            timeline_row,
+            from_=0,
+            to=1000,
+            orient=tk.HORIZONTAL,
+            variable=self.seek_var,
+            style="Timeline.Horizontal.TScale",
+        )
+
+        self.seek_slider.pack(
+            side=tk.LEFT,
+            fill=tk.X,
+            expand=True,
             padx=8,
         )
-        self.status_bar.pack(fill=tk.X)
 
-        if self.edit_mode:
-            help_text = (
-                "  A: -5s   D: +5s   SPACE: pause/play   +/-: speed   "
-                "I: novo início   O: novo fim   Q/Esc: salvar e sair"
-            )
-        else:
-            help_text = (
-                "  A: -5s   D: +5s   SPACE: pause/play   +/-: speed   "
-                "F: flag   Q/Esc: quit & cut"
-            )
+        self.total_label = tk.Label(
+            timeline_row,
+            text="00:00",
+            bg="#202020",
+            fg="#eeeeee",
+            font=("Monospace", 10),
+            width=8,
+        )
+
+        self.total_label.pack(
+            side=tk.RIGHT,
+        )
+
+        # Clique direto na timeline
+        self.seek_slider.bind(
+            "<Button-1>",
+            self._timeline_click,
+        )
+
+        # Arrastar normalmente
+        self.seek_slider.bind(
+            "<ButtonPress-1>",
+            self._timeline_press,
+            add="+",
+        )
+
+        self.seek_slider.bind(
+            "<ButtonRelease-1>",
+            self._timeline_release,
+        )
+
+        # ---------------------------------------------------------------------
+        # Controls
+        # ---------------------------------------------------------------------
+
+        controls = tk.Frame(
+            panel,
+            bg="#202020",
+        )
+
+        controls.pack(
+            fill=tk.X,
+            padx=10,
+            pady=5,
+        )
+
+        self.make_button(
+            controls,
+            "< 5s",
+            self._rewind,
+        ).pack(
+            side=tk.LEFT,
+            padx=(0, 5),
+        )
+
+        self.make_button(
+            controls,
+            "Play / Pause",
+            self._pause_toggle,
+        ).pack(
+            side=tk.LEFT,
+            padx=5,
+        )
+
+        self.make_button(
+            controls,
+            "5s >",
+            self._forward,
+        ).pack(
+            side=tk.LEFT,
+            padx=5,
+        )
+
+        # ---------------------------------------------------------------------
+        # Speed
+        # ---------------------------------------------------------------------
+
         tk.Label(
-            self,
-            text=help_text,
-            bg="#111111",
+            controls,
+            text="Velocidade",
+            bg="#202020",
+            fg="#bbbbbb",
+            font=("Sans", 10),
+        ).pack(
+            side=tk.LEFT,
+            padx=(22, 6),
+        )
+
+        self.speed_combo = ttk.Combobox(
+            controls,
+            width=7,
+            state="readonly",
+            style="Speed.TCombobox",
+            values=[
+                "0.25x",
+                "0.5x",
+                "0.75x",
+                "1x",
+                "1.25x",
+                "1.5x",
+                "2x",
+                "3x",
+                "4x",
+            ],
+        )
+
+        self.speed_combo.set("1x")
+
+        self.speed_combo.bind(
+            "<<ComboboxSelected>>",
+            self._speed_selected,
+        )
+
+        self.speed_combo.pack(
+            side=tk.LEFT,
+            padx=3,
+        )
+
+        # ---------------------------------------------------------------------
+        # Mark controls
+        # ---------------------------------------------------------------------
+
+        self.mark_button = self.make_button(
+            controls,
+            "Marcar início",
+            self._add_mark,
+            prominent=True,
+        )
+
+        self.mark_button.pack(
+            side=tk.LEFT,
+            padx=(25, 5),
+        )
+
+        self.make_button(
+            controls,
+            "Desfazer",
+            self._undo_mark,
+        ).pack(
+            side=tk.LEFT,
+            padx=5,
+        )
+
+        self.make_button(
+            controls,
+            "Limpar",
+            self._clear_marks,
+        ).pack(
+            side=tk.LEFT,
+            padx=5,
+        )
+
+        # ---------------------------------------------------------------------
+        # Cuts display
+        # ---------------------------------------------------------------------
+
+        cuts_frame = tk.Frame(
+            panel,
+            bg="#181818",
+        )
+
+        cuts_frame.pack(
+            fill=tk.X,
+            padx=10,
+            pady=(8, 5),
+        )
+
+        title_row = tk.Frame(
+            cuts_frame,
+            bg="#181818",
+        )
+
+        title_row.pack(
+            fill=tk.X,
+            padx=8,
+            pady=(6, 2),
+        )
+
+        tk.Label(
+            title_row,
+            text="Intervalos marcados",
+            bg="#181818",
+            fg="#eeeeee",
+            font=("Sans", 10, "bold"),
+        ).pack(
+            side=tk.LEFT,
+        )
+
+        self.count_label = tk.Label(
+            title_row,
+            text="0 intervalos",
+            bg="#181818",
             fg="#888888",
+            font=("Sans", 9),
+        )
+
+        self.count_label.pack(
+            side=tk.RIGHT,
+        )
+
+        self.cuts_var = tk.StringVar(
+            value="Nenhum intervalo marcado."
+        )
+
+        self.cuts_label = tk.Label(
+            cuts_frame,
+            textvariable=self.cuts_var,
+            bg="#181818",
+            fg="#bbbbbb",
             font=("Monospace", 10),
             anchor="w",
+            justify=tk.LEFT,
             padx=8,
-        ).pack(fill=tk.X)
-
-    def _setup_vlc(self, path: str):
-        self.instance = vlc.Instance(
-            "--quiet",
-            "--no-video-title-show",
+            pady=6,
         )
-        self.player = self.instance.media_player_new()
-        media = self.instance.media_new_path(path)
-        self.player.set_media(media)
 
-        # Parse for duration at startup
-        media.parse_with_options(vlc.MediaParseFlag.local, timeout=5000)
-        self.total_ms = media.get_duration()
+        self.cuts_label.pack(
+            fill=tk.X,
+        )
 
-    def _embed_vlc(self):
-        wid = self.canvas.winfo_id()
-        system = platform.system()
-        if system == "Windows":
-            self.player.set_hwnd(wid)
-        elif system == "Darwin":
-            self.player.set_nsobject(wid)
-        else:
-            self.player.set_xwindow(wid)
-        self.player.play()
-        self.after(500, self._check_state)
-        self.canvas.focus_set()
-        self.after(600, self._grab_focus)
+        # ---------------------------------------------------------------------
+        # Footer / shortcuts
+        # ---------------------------------------------------------------------
 
-        if self.edit_mode:
-            # Seek a couple seconds before the current start so the user has
-            # context around the existing in-point.
-            preroll_ms = max(0, int((self.new_start - 2.0) * 1000))
-            self.after(700, lambda: self.player.set_time(preroll_ms))
+        self.status_var = tk.StringVar(
+            value="Carregando vídeo..."
+        )
 
-    def _grab_focus(self):
-        # On Windows the embedded VLC output can steal keyboard focus;
-        # force it back to the tk window so key bindings keep working.
-        self.focus_force()
-        self.canvas.focus_set()
+        self.status_label = tk.Label(
+            panel,
+            textvariable=self.status_var,
+            bg="#202020",
+            fg="#aaaaaa",
+            font=("Monospace", 9),
+            anchor="w",
+            padx=10,
+        )
 
-    def _check_state(self):
-        state = self.player.get_state()
-        if state == vlc.State.Error:
-            mrl = self.player.get_media().get_mrl() if self.player.get_media() else "?"
-            print(f"Error: VLC could not open media: {mrl}")
+        self.status_label.pack(
+            fill=tk.X,
+            pady=(3, 2),
+        )
+
+        shortcuts = (
+            "A: -5s   D: +5s   Espaço: play/pause   "
+            "F: marcar   +/-: velocidade   Q/Esc: sair"
+        )
+
+        tk.Label(
+            panel,
+            text=shortcuts,
+            bg="#202020",
+            fg="#686868",
+            font=("Monospace", 9),
+            anchor="w",
+            padx=10,
+        ).pack(
+            fill=tk.X,
+            pady=(0, 8),
+        )
+
+
+    # =========================================================================
+    # Keyboard
+    # =========================================================================
 
     def _bind_keys(self):
-        self.bind("<KeyPress-a>", lambda e: self._on_rewind())
-        self.bind("<KeyPress-d>", lambda e: self._on_ff())
-        self.bind("<KeyPress-space>", lambda e: self._on_pause_toggle())
-        self.bind("<KeyPress-plus>", lambda e: self._on_speed_up())
-        self.bind("<KeyPress-equal>", lambda e: self._on_speed_up())
-        self.bind("<KeyPress-minus>", lambda e: self._on_speed_down())
-        self.bind("<KeyPress-underscore>", lambda e: self._on_speed_down())
-        self.bind("<KeyPress-q>", lambda e: self._on_quit())
-        self.bind("<Escape>", lambda e: self._on_quit())
-        if self.edit_mode:
-            self.bind("<KeyPress-i>", lambda e: self._on_set_in())
-            self.bind("<KeyPress-o>", lambda e: self._on_set_out())
-        else:
-            self.bind("<KeyPress-f>", lambda e: self._on_flag())
-        self.focus_set()
 
-    def _on_rewind(self):
-        current = self.player.get_time()
-        self.player.set_time(max(0, current - 5000))
+        self.bind_all(
+            "<KeyPress-a>",
+            lambda e: self._rewind(),
+        )
 
-    def _on_ff(self):
-        current = self.player.get_time()
-        self.player.set_time(current + 5000)
+        self.bind_all(
+            "<KeyPress-d>",
+            lambda e: self._forward(),
+        )
 
-    def _on_pause_toggle(self):
-        self.player.pause()
+        self.bind_all(
+            "<KeyPress-space>",
+            lambda e: self._pause_toggle(),
+        )
 
-    def _on_speed_up(self):
-        self._set_rate(self.rate * RATE_STEP)
+        self.bind_all(
+            "<KeyPress-f>",
+            lambda e: self._add_mark(),
+        )
 
-    def _on_speed_down(self):
-        self._set_rate(self.rate / RATE_STEP)
+        self.bind_all(
+            "<KeyPress-plus>",
+            lambda e: self._speed_up(),
+        )
 
-    def _set_rate(self, new_rate: float):
-        self.rate = max(MIN_RATE, min(MAX_RATE, new_rate))
-        self.player.set_rate(self.rate)
+        self.bind_all(
+            "<KeyPress-equal>",
+            lambda e: self._speed_up(),
+        )
 
-    def _on_flag(self):
-        t = self.player.get_time()
-        if t >= 0:
-            self.flags.append(t)
-            self._refresh_status(t)
+        self.bind_all(
+            "<KeyPress-minus>",
+            lambda e: self._speed_down(),
+        )
 
-    def _on_set_in(self):
-        self.new_start = self.player.get_time() / 1000.0
-        self._refresh_status()
+        self.bind_all(
+            "<KeyPress-underscore>",
+            lambda e: self._speed_down(),
+        )
 
-    def _on_set_out(self):
-        self.new_end = self.player.get_time() / 1000.0
-        self._refresh_status()
+        self.bind_all(
+            "<Control-z>",
+            lambda e: self._undo_mark(),
+        )
 
-    def _on_quit(self):
-        if self._quitting:
-            return
-        self._quitting = True
+        self.bind_all(
+            "<KeyPress-q>",
+            lambda e: self._quit(),
+        )
 
-        length = self.player.get_length()
-        if length > 0:
-            self.total_ms = length
+        self.bind_all(
+            "<Escape>",
+            lambda e: self._quit(),
+        )
 
-        self.player.stop()
-        self.destroy()
+        self.protocol(
+            "WM_DELETE_WINDOW",
+            self._quit,
+        )
 
-    def _refresh_status(self, flagged_at: int = -1):
-        current = self.player.get_time()
-        total = self.total_ms
-        base = f"  {_fmt_ms(current)} / {_fmt_ms(total)}   |   Speed: {self.rate:.2f}x"
-        if self.edit_mode:
-            msg = (
-                f"{base}   |   Início: {self.new_start:.1f}s"
-                f"   Fim: {self.new_end:.1f}s"
+
+    # =========================================================================
+    # Playback
+    # =========================================================================
+
+    def _rewind(self):
+
+        try:
+            self.mpv.seek_relative(-5)
+        except Exception:
+            pass
+
+
+    def _forward(self):
+
+        try:
+            self.mpv.seek_relative(5)
+        except Exception:
+            pass
+
+
+    def _pause_toggle(self):
+
+        try:
+            self.mpv.pause_toggle()
+        except Exception:
+            pass
+
+
+    # =========================================================================
+    # Speed
+    # =========================================================================
+
+    def _set_speed(self, speed):
+
+        self.rate = max(
+            MIN_RATE,
+            min(MAX_RATE, speed),
+        )
+
+        try:
+            self.mpv.set_speed(self.rate)
+        except Exception:
+            pass
+
+        self.speed_combo.set(
+            f"{self.rate:g}x"
+        )
+
+
+    def _speed_selected(self, event=None):
+
+        try:
+
+            speed = float(
+                self.speed_combo.get().replace("x", "")
             )
+
+        except ValueError:
+            return
+
+        self._set_speed(speed)
+
+
+    def _speed_up(self):
+
+        self._set_speed(
+            self.rate * RATE_STEP
+        )
+
+
+    def _speed_down(self):
+
+        self._set_speed(
+            self.rate / RATE_STEP
+        )
+
+
+    # =========================================================================
+    # Timeline
+    # =========================================================================
+
+    def _seek_using_event(self, event):
+
+        try:
+            duration = self.mpv.duration()
+        except Exception:
+            return
+
+        if duration <= 0:
+            return
+
+        width = self.seek_slider.winfo_width()
+
+        if width <= 1:
+            return
+
+        # pequena compensação pelo tamanho visual do knob do ttk.Scale
+        margin = 8
+
+        usable_width = max(
+            1,
+            width - (margin * 2),
+        )
+
+        x = event.x - margin
+
+        fraction = x / usable_width
+
+        fraction = max(
+            0.0,
+            min(1.0, fraction),
+        )
+
+        target = duration * fraction
+
+        self.seek_var.set(
+            fraction * 1000
+        )
+
+        try:
+            self.mpv.seek_absolute(target)
+        except Exception:
+            pass
+
+
+    def _timeline_click(self, event):
+
+        self._slider_dragging = True
+
+        self._seek_using_event(event)
+
+
+    def _timeline_press(self, event):
+
+        self._slider_dragging = True
+
+
+    def _timeline_release(self, event):
+
+        self._seek_using_event(event)
+
+        self._slider_dragging = False
+
+
+    # =========================================================================
+    # Marks
+    # =========================================================================
+
+    def _add_mark(self):
+
+        try:
+            current = self.mpv.current_time()
+
+        except Exception:
+            return
+
+        # evita repetição praticamente no mesmo instante
+        if self.marks:
+
+            if abs(
+                current - self.marks[-1]
+            ) < 0.20:
+
+                return
+
+        self.marks.append(
+            current
+        )
+
+        print(
+            f"[MARCAÇÃO] {fmt_seconds(current)} "
+            f"({current:.3f}s)"
+        )
+
+        self._refresh_marks()
+
+
+    def _undo_mark(self):
+
+        if not self.marks:
+            return
+
+        removed = self.marks.pop()
+
+        print(
+            f"[DESFEITO] {fmt_seconds(removed)}"
+        )
+
+        self._refresh_marks()
+
+
+    def _clear_marks(self):
+
+        if not self.marks:
+            return
+
+        self.marks.clear()
+
+        print(
+            "[INFO] Todas as marcações foram removidas."
+        )
+
+        self._refresh_marks()
+
+
+    def _refresh_marks(self):
+
+        # Próximo botão alterna automaticamente
+        if len(self.marks) % 2 == 0:
+
+            self.mark_button.config(
+                text="Marcar início"
+            )
+
         else:
-            flags_str = ", ".join(f"{ms/1000:.1f}s" for ms in self.flags) or "none"
-            msg = f"{base}   |   Flags: [{flags_str}]"
-            if flagged_at >= 0:
-                msg += f"   ← flagged {flagged_at/1000:.1f}s"
-        self.status_var.set(msg)
+
+            self.mark_button.config(
+                text="Marcar fim"
+            )
+
+        lines = []
+
+        complete_pairs = (
+            len(self.marks) // 2
+        )
+
+        for i in range(
+            complete_pairs
+        ):
+
+            start = self.marks[
+                i * 2
+            ]
+
+            end = self.marks[
+                i * 2 + 1
+            ]
+
+            duration = (
+                end - start
+            )
+
+            lines.append(
+                f"{i + 1}.  "
+                f"{fmt_seconds(start)}  ->  "
+                f"{fmt_seconds(end)}"
+                f"    ({duration:.1f}s)"
+            )
+
+        # marcador sem par
+        if len(self.marks) % 2 == 1:
+
+            start = self.marks[-1]
+
+            lines.append(
+                f"{complete_pairs + 1}.  "
+                f"{fmt_seconds(start)}  ->  "
+                f"aguardando fim"
+            )
+
+        if not lines:
+
+            self.cuts_var.set(
+                "Nenhum intervalo marcado."
+            )
+
+        else:
+
+            self.cuts_var.set(
+                "\n".join(lines)
+            )
+
+        if complete_pairs == 1:
+
+            count = "1 intervalo"
+
+        else:
+
+            count = (
+                f"{complete_pairs} intervalos"
+            )
+
+        if len(self.marks) % 2 == 1:
+
+            count += " + 1 aberto"
+
+        self.count_label.config(
+            text=count
+        )
+
+
+    # =========================================================================
+    # Status
+    # =========================================================================
 
     def _update_status(self):
+
         if self._quitting:
             return
-        self._refresh_status()
-        self.after(250, self._update_status)
 
+        try:
 
-def _fmt_ms(ms: int) -> str:
-    if ms < 0:
-        return "--:--"
-    s = ms // 1000
-    m, s = divmod(s, 60)
-    return f"{m:02d}:{s:02d}"
+            current = self.mpv.current_time()
+            duration = self.mpv.duration()
 
+        except Exception:
 
-def _get_duration_ffprobe(path: Path) -> float:
-    """Fallback: ask ffprobe for duration in seconds."""
-    try:
-        result = subprocess.run(
-            [
-                "ffprobe", "-v", "error",
-                "-show_entries", "format=duration",
-                "-of", "default=noprint_wrappers=1:nokey=1",
-                str(path),
-            ],
-            capture_output=True,
-            text=True,
-            check=False,
+            self.after(
+                400,
+                self._update_status,
+            )
+
+            return
+
+        self.current_label.config(
+            text=fmt_seconds(current)
         )
-        return float(result.stdout.strip())
-    except Exception:
-        return 0.0
+
+        self.total_label.config(
+            text=fmt_seconds(duration)
+        )
+
+        if (
+            duration > 0
+            and not self._slider_dragging
+        ):
+
+            fraction = (
+                current / duration
+            )
+
+            self.seek_var.set(
+                fraction * 1000
+            )
+
+        next_mark = (
+            "fim"
+            if len(self.marks) % 2
+            else "início"
+        )
+
+        self.status_var.set(
+            f"{fmt_seconds(current)} / "
+            f"{fmt_seconds(duration)}"
+            f"    Velocidade: {self.rate:g}x"
+            f"    Próxima marcação: {next_mark}"
+        )
+
+        self.after(
+            200,
+            self._update_status,
+        )
 
 
-def cut_segment(source: Path, start: float, end: float, output_path: Path) -> bool:
-    """Cut a single [start, end] (seconds) segment from source into output_path."""
-    cmd = [
-        "ffmpeg", "-y",
-        "-ss", f"{start:.3f}",
-        "-to", f"{end:.3f}",
-        "-i", str(source),
-        "-c", "copy",
-        "-avoid_negative_ts", "make_zero",
-        str(output_path),
-    ]
-    result = subprocess.run(cmd, capture_output=True, text=True, check=False)
-    if result.returncode != 0:
-        print(f"    WARNING: ffmpeg exited {result.returncode}")
-        print(result.stderr[-500:] if result.stderr else "")
-        return False
-    return True
+    # =========================================================================
+    # Quit
+    # =========================================================================
+
+    def _quit(self):
+
+        if self._quitting:
+            return
+
+        self._quitting = True
+
+        try:
+            self.mpv.stop()
+        except Exception:
+            pass
+
+        self.destroy()
 
 
-def cut_video(source: Path, boundaries: list[float]) -> tuple[int, Path]:
-    """Cut source into segments defined by boundaries (seconds).
+# =============================================================================
+# Result
+# =============================================================================
 
-    Clips go to videos_saida/<source_stem>/trecho_NN.mp4. Writes flags.json
-    alongside them so individual trechos can later be reopened with --editar.
-    """
-    out_dir = VIDEOS_SAIDA / source.stem
-    out_dir.mkdir(parents=True, exist_ok=True)
-    total_cut = 0
-    segments: list[dict] = []
+def print_result(
+    video_path: Path,
+    marks: list[float],
+):
 
-    for i in range(len(boundaries) - 1):
-        start = boundaries[i]
-        end = boundaries[i + 1]
+    print()
+    print("=" * 70)
+    print("RESULTADO DAS MARCAÇÕES")
+    print("=" * 70)
 
-        if end - start < 0.5:
-            print(f"  Skipping segment {i+1}: too short ({end - start:.2f}s)")
-            continue
+    if not marks:
 
-        index = i + 1
-        output_path = out_dir / f"trecho_{index:02d}.mp4"
-        print(f"  Cutting segment {index}: {start:.1f}s → {end:.1f}s → {output_path.name}")
-        if cut_segment(source, start, end, output_path):
-            total_cut += 1
-            segments.append({"index": index, "start": start, "end": end})
+        print(
+            "Nenhum intervalo foi marcado."
+        )
 
-    save_metadata(out_dir, source.name, segments)
-    return total_cut, out_dir
-
-
-# ── edit flow ────────────────────────────────────────────────────────────────
-
-def run_edit(trecho_arg: str):
-    trecho_path = Path(trecho_arg).resolve()
-    if not trecho_path.exists():
-        print(f"Error: trecho não encontrado: {trecho_path}")
-        sys.exit(1)
-
-    match = TRECHO_NAME_RE.search(trecho_path.name)
-    if not match:
-        print(f"Error: '{trecho_path.name}' não parece um arquivo trecho_NN.mp4")
-        sys.exit(1)
-    index = int(match.group(1))
-
-    out_dir = trecho_path.parent
-    try:
-        data = load_metadata(out_dir)
-    except FileNotFoundError as e:
-        print(f"Error: {e}")
-        print("(esse trecho foi cortado antes da introdução do flags.json e não pode ser editado automaticamente)")
-        sys.exit(1)
-
-    segment = next((s for s in data["segments"] if s["index"] == index), None)
-    if segment is None:
-        print(f"Error: nenhum registro do trecho {index} em {metadata_path(out_dir)}")
-        sys.exit(1)
-
-    source_path = VIDEOS_ENTRADA / data["source"]
-    if not source_path.exists():
-        print(f"Error: vídeo original '{data['source']}' não encontrado em {VIDEOS_ENTRADA}")
-        print("Coloque o vídeo bruto de volta em videos_entrada/ para poder editar este trecho.")
-        sys.exit(1)
-
-    print(f"Editando trecho {index} de {trecho_path.name}")
-    print(f"Início/fim atuais: {segment['start']:.1f}s → {segment['end']:.1f}s")
-    print("Controles: A=-5s  D=+5s  SPACE=pause  +/-=speed  I=novo início  O=novo fim  Q/Esc=salvar\n")
-
-    app = CourtSlicerApp(str(source_path), edit_range=(segment["start"], segment["end"]))
-    app.mainloop()
-
-    new_start, new_end = app.new_start, app.new_end
-    if new_end - new_start < 0.5:
-        print("Início/fim inválidos (trecho ficaria menor que 0.5s) — edição cancelada.")
-        sys.exit(1)
-
-    print(f"\nNovo início/fim: {new_start:.1f}s → {new_end:.1f}s")
-    print(f"Regravando {trecho_path.name}...")
-    if not cut_segment(source_path, new_start, new_end, trecho_path):
-        print("Error: falha ao regravar o trecho.")
-        sys.exit(1)
-
-    update_segment_metadata(out_dir, index, new_start, new_end)
-    print(f"Concluído — {trecho_path} atualizado.")
-
-
-def main():
-    args = parse_args()
-
-    if args.editar:
-        run_edit(args.editar)
         return
 
-    video_path = resolve_video_path(args.video)
+    complete_pairs = (
+        len(marks) // 2
+    )
+
+    for i in range(
+        complete_pairs
+    ):
+
+        start = marks[
+            i * 2
+        ]
+
+        end = marks[
+            i * 2 + 1
+        ]
+
+        print(
+            f"{i + 1:02d}. "
+            f"{fmt_seconds(start)} -> "
+            f"{fmt_seconds(end)}"
+        )
+
+    if len(marks) % 2:
+
+        print()
+        print(
+            "[AVISO] Existe um intervalo sem marcação de fim:"
+        )
+
+        print(
+            f"       {fmt_seconds(marks[-1])} -> ???"
+        )
+
+    print()
+    print("-" * 70)
+    print("LINHAS PARA cortes_internos.csv")
+    print("-" * 70)
+
+    for i in range(
+        complete_pairs
+    ):
+
+        start = marks[
+            i * 2
+        ]
+
+        end = marks[
+            i * 2 + 1
+        ]
+
+        print(
+            f"{video_path.name},"
+            f"{fmt_csv_time(start)},"
+            f"{fmt_csv_time(end)},"
+            f"tempo_morto"
+        )
+
+    print()
+    print(
+        "Troque 'tempo_morto' pelo motivo correto "
+        "quando souber: timeout, atendimento_jogador, "
+        "discussao_arbitragem, intervalo, etc."
+    )
+
+
+# =============================================================================
+# Main
+# =============================================================================
+
+def main():
+
+    args = parse_args()
+
+    video_path = resolve_video_path(
+        args.video
+    )
 
     if not video_path.exists():
-        print(f"Error: file not found: {video_path}")
-        print(f"(looked directly, and inside {VIDEOS_ENTRADA})")
+
+        print(
+            f"[ERRO] Vídeo não encontrado:\n"
+            f"{video_path}"
+        )
+
         sys.exit(1)
 
-    print(f"Opening: {video_path}")
-    print("Controls: A=-5s  D=+5s  SPACE=pause  +/-=speed  F=flag  Q/Esc=quit & cut\n")
+    print()
+    print(
+        f"[INFO] Abrindo:\n"
+        f"{video_path}"
+    )
 
-    app = CourtSlicerApp(str(video_path))
+    print()
+    print(
+        "Fluxo de marcação:"
+        "\n  F / botão -> início do tempo morto"
+        "\n  F / botão -> fim do tempo morto"
+        "\n  repetir para os próximos intervalos"
+    )
+
+    print()
+
+    app = CourtSlicerApp(
+        video_path
+    )
+
     app.mainloop()
 
-    flags = app.flags
-    total_ms = app.total_ms
-
-    if not flags:
-        print("No flags set — nothing to cut.")
-        sys.exit(0)
-
-    # Resolve total duration
-    if total_ms <= 0:
-        print("Resolving duration via ffprobe...")
-        total_ms = int(_get_duration_ffprobe(video_path) * 1000)
-
-    if total_ms <= 0:
-        print("Error: could not determine video duration.")
-        sys.exit(1)
-
-    flags_sorted = sorted(set(flags))
-    boundaries = [0.0] + [f / 1000.0 for f in flags_sorted] + [total_ms / 1000.0]
-
-    print(f"\nFlags ({len(flags_sorted)}): {[f/1000 for f in flags_sorted]}")
-    print(f"Total duration: {total_ms/1000:.1f}s")
-    print(f"Cutting {len(boundaries)-1} segment(s)...\n")
-
-    n, out_dir = cut_video(video_path, boundaries)
-    print(f"\nDone — {n} clip(s) written to {out_dir}/")
+    print_result(
+        video_path,
+        app.marks,
+    )
 
 
 if __name__ == "__main__":
