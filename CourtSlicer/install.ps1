@@ -74,22 +74,18 @@ if ($missingFF.Count -gt 0) {
 }
 Success "ffmpeg and ffprobe OK"
 
-# ── VLC check ─────────────────────────────────────────────────────────────────
-Info "Checking VLC (native library used by python-vlc)..."
-$vlcFound = $false
-if (Get-Command vlc -ErrorAction SilentlyContinue) { $vlcFound = $true }
-foreach ($path in @("$env:ProgramFiles\VideoLAN\VLC\libvlc.dll", "${env:ProgramFiles(x86)}\VideoLAN\VLC\libvlc.dll")) {
-    if (Test-Path $path) { $vlcFound = $true }
-}
-if ($vlcFound) {
-    Success "VLC found"
+# ── mpv check ─────────────────────────────────────────────────────────────────
+Info "Checking mpv..."
+if (Get-Command mpv -ErrorAction SilentlyContinue) {
+    Success "mpv found"
 } else {
-    Warn "Could not confirm a VLC install (python-vlc needs the native VLC libraries, not just the pip package)."
+    Warn "mpv was not found in PATH."
     Write-Host ""
-    Write-Host "  Install VLC:"
-    Write-Host "    winget install VideoLAN.VLC"
-    Write-Host "    (or)  https://www.videolan.org/vlc/"
+    Write-Host "  Install mpv:"
+    Write-Host "    winget install shinchiro.mpv"
+    Write-Host "    (or)  https://mpv.io/installation/"
     Write-Host ""
+    Die "mpv is required. Install it and re-run."
 }
 
 # ── uv detection / install ────────────────────────────────────────────────────

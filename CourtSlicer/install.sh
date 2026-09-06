@@ -88,26 +88,27 @@ if [[ ${#MISSING_FF[@]} -gt 0 ]]; then
 fi
 success "ffmpeg and ffprobe OK"
 
-# ── VLC check ─────────────────────────────────────────────────────────────────
-info "Checking VLC (native library used by python-vlc)..."
-if command -v vlc &>/dev/null || [[ -e /Applications/VLC.app ]] || ldconfig -p 2>/dev/null | grep -q libvlc; then
-  success "VLC found"
+# ── mpv check ─────────────────────────────────────────────────────────────────
+info "Checking mpv..."
+if command -v mpv &>/dev/null; then
+  success "mpv found"
 else
-  warn "Could not confirm a VLC install (python-vlc needs the native VLC libraries, not just the pip package)."
+  warn "mpv was not found in PATH."
   echo ""
-  echo "  Install VLC:"
+  echo "  Install mpv:"
   if command -v apt-get &>/dev/null; then
-    echo "    sudo apt install vlc"
+    echo "    sudo apt install mpv"
   elif command -v dnf &>/dev/null; then
-    echo "    sudo dnf install vlc"
+    echo "    sudo dnf install mpv"
   elif command -v pacman &>/dev/null; then
-    echo "    sudo pacman -S vlc"
+    echo "    sudo pacman -S mpv"
   elif command -v brew &>/dev/null; then
-    echo "    brew install --cask vlc"
+    echo "    brew install mpv"
   else
-    echo "    https://www.videolan.org/vlc/"
+    echo "    https://mpv.io/installation/"
   fi
   echo ""
+  die "mpv is required. Install it and re-run."
 fi
 
 # ── uv detection / install ────────────────────────────────────────────────────

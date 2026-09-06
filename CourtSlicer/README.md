@@ -15,9 +15,14 @@ pastas de entrada/saída por partida.
 
 - Python ≥ 3.10
 - [ffmpeg](https://ffmpeg.org/) (inclui `ffprobe`)
-- [VLC media player](https://www.videolan.org/vlc/) instalado no sistema
-  (a biblioteca nativa `libvlc` — não basta o pacote Python `python-vlc`)
+- [mpv](https://mpv.io/installation/) instalado e disponível no `PATH`
+- `ffmpeg` e `ffprobe` disponíveis no `PATH`
 - `tkinter` (interface gráfica e captura de teclado)
+
+No Linux o vídeo continua embutido no painel do CourtSlicer. No macOS e no
+Windows o mpv abre em uma janela própria, porque o embedding do mpv em Tk não
+é estável nessas plataformas; a janela do CourtSlicer continua controlando o
+playback, a timeline e as marcações via IPC.
 
 ## Instalação
 
@@ -28,7 +33,7 @@ cd CourtSlicer
 .\install.ps1
 ```
 
-O script verifica Python ≥3.10, tkinter, ffmpeg/ffprobe e VLC, instala o
+O script verifica Python ≥3.10, tkinter, ffmpeg/ffprobe e mpv, instala o
 [uv](https://docs.astral.sh/uv/) se necessário, e cria o ambiente virtual com
 o comando `court-slicer`.
 
@@ -40,7 +45,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 Instalar as dependências de sistema manualmente, se preferir:
 ```powershell
 winget install ffmpeg
-winget install VideoLAN.VLC
+winget install shinchiro.mpv
 ```
 
 Opções: `-Yes` (não interativo, instala uv automaticamente), `-NoUv` (força pip em vez de uv).
@@ -52,12 +57,17 @@ cd CourtSlicer
 bash install.sh
 ```
 
-O script verifica Python ≥3.10, tkinter, ffmpeg/ffprobe e VLC, instala o `uv`
+O script verifica Python ≥3.10, tkinter, ffmpeg/ffprobe e mpv, instala o `uv`
 se necessário, e cria o ambiente virtual com o comando `court-slicer`.
 
 Instalar as dependências de sistema manualmente, se preferir (Debian/Ubuntu):
 ```sh
-sudo apt install python3-tk ffmpeg vlc
+sudo apt install python3-tk ffmpeg mpv
+```
+
+No macOS, por Homebrew:
+```sh
+brew install python-tk ffmpeg mpv
 ```
 
 Opções: `--yes` (não interativo, instala uv automaticamente), `--no-uv` (força pip em vez de uv).

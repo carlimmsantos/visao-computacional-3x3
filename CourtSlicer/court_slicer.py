@@ -146,8 +146,11 @@ Não commitar arquivos .mp4 no repositório.
 """
 
 import argparse
+import ctypes
 import json
 import os
+import platform
+import shutil
 import socket
 import subprocess
 import sys
@@ -155,9 +158,14 @@ import tempfile
 import time
 from pathlib import Path
 
-import tkinter as tk
-from tkinter import ttk
-
+try:
+    import tkinter as tk
+    from tkinter import ttk
+    TKINTER_IMPORT_ERROR = None
+except ImportError as exc:  # permite uma mensagem clara no CLI/instalador
+    tk = None
+    ttk = None
+    TKINTER_IMPORT_ERROR = exc
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 VIDEOS_ENTRADA = PROJECT_ROOT / "videos_entrada"
@@ -165,6 +173,38 @@ VIDEOS_ENTRADA = PROJECT_ROOT / "videos_entrada"
 MIN_RATE = 0.25
 MAX_RATE = 4.0
 RATE_STEP = 1.25
+
+
+def platform_name() -> str:
+    if sys.platform == "win32":
+        return "Windows"
+    if sys.platform == "darwin":
+        return "macOS"
+    if sys.platform.startswith("linux"):
+        return "Linux"
+    return platform.system() or sys.platform
+
+
+def check_dependencies() -> list[str]:
+    """Retorna erros de ambiente sem iniciar a janela Tk."""
+    errors = []
+    if TKINTER_IMPORT_ERROR is not None:
+        errors.append(
+            "tkinter não está disponível. Instale uma distribuição do Python "
+            "com Tcl/Tk (no Linux, normalmente python3-tk)."
+        )
+    if shutil.which("mpv") is None:
+        errors.append(
+            "mpv não foi encontrado no PATH. Instale o mpv e abra um novo "
+            "terminal antes de executar o CourtSlicer."
+        )
+    for executable in ("ffmpeg", "ffprobe"):
+        if shutil.which(executable) is None:
+            errors.append(
+                f"{executable} não foi encontrado no PATH. Instale o pacote "
+                "ffmpeg (ele inclui o ffprobe)."
+            )
+    return errors
 
 
 # =============================================================================
@@ -238,64 +278,78 @@ class MPVController:
     def __init__(self, video_path: Path):
         self.video_path = video_path
 
-        self.sock_path = (
+        self.ipc_path = (
             Path(tempfile.gettempdir())
             / f"courtslicer_mpv_{os.getpid()}.sock"
         )
+        self.pipe_name = rf"\\.\pipe\courtslicer_mpv_{os.getpid()}"
 
         self.proc = None
         self.request_id = 0
 
 
-    def start(self, wid: int):
+    @property
+    def uses_embedded_video(self) -> bool:
+        return sys.platform.startswith("linux")
 
-        if self.sock_path.exists():
-            self.sock_path.unlink()
+    @property
+    def ipc_target(self) -> str:
+        return self.pipe_name if sys.platform == "win32" else str(self.ipc_path)
+
+    def start(self, wid: int | None = None):
+
+        if self.ipc_path.exists():
+            self.ipc_path.unlink()
 
         cmd = [
             "mpv",
-
-            # vídeo dentro do Canvas do Tk
-            f"--wid={wid}",
-
-            # NO SEU SISTEMA isto corrige a imagem verde
-            "--deinterlace=yes",
-
-            # evita conflito entre teclas do mpv e CourtSlicer
+            # O embedding via --wid é confiável no Linux. Nos demais sistemas
+            # o mpv abre sua própria janela e o Tk continua sendo o painel.
+            *( [f"--wid={wid}"] if self.uses_embedded_video and wid else [] ),
+            # A opção é específica do problema de vídeo entrelaçado observado
+            # no Linux; não força um filtro nos decoders do macOS/Windows.
+            *( ["--deinterlace=yes"] if sys.platform.startswith("linux") else [] ),
             "--input-default-bindings=no",
             "--input-vo-keyboard=no",
-
             "--force-window=yes",
             "--keep-open=yes",
-
-            # mpv controlado via socket
-            f"--input-ipc-server={self.sock_path}",
-
-            # remove controles/OSD próprios
+            f"--input-ipc-server={self.ipc_target}",
             "--osd-level=0",
-
             str(self.video_path),
         ]
 
         self.proc = subprocess.Popen(
             cmd,
             stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
+            text=True,
         )
 
         deadline = time.time() + 5.0
-
         while time.time() < deadline:
-
-            if self.sock_path.exists():
+            if self._ipc_ready():
                 return
-
+            if self.proc.poll() is not None:
+                break
             time.sleep(0.05)
 
+        detail = ""
+        if self.proc.poll() is not None and self.proc.stderr is not None:
+            detail = self.proc.stderr.read().strip()
+        suffix = f" Detalhe do mpv: {detail}" if detail else ""
         raise RuntimeError(
-            "O mpv não criou o socket IPC. "
-            "Confirme se 'mpv' está instalado."
+            f"O mpv não disponibilizou o IPC para {platform_name()}. "
+            "Confirme se o mpv está instalado e se pode ser executado no PATH."
+            f"{suffix}"
         )
+
+    def _ipc_ready(self) -> bool:
+        if sys.platform == "win32":
+            kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+            kernel32.WaitNamedPipeW.argtypes = [ctypes.c_wchar_p, ctypes.c_uint]
+            kernel32.WaitNamedPipeW.restype = ctypes.c_int
+            return bool(kernel32.WaitNamedPipeW(self.pipe_name, 100))
+        return self.ipc_path.exists()
 
 
     def stop(self):
@@ -312,10 +366,10 @@ class MPVController:
             except Exception:
                 pass
 
-        if self.sock_path.exists():
+        if self.ipc_path.exists():
 
             try:
-                self.sock_path.unlink()
+                self.ipc_path.unlink()
             except Exception:
                 pass
 
@@ -324,13 +378,16 @@ class MPVController:
 
         message = json.dumps(payload).encode("utf-8") + b"\n"
 
+        if sys.platform == "win32":
+            return self._send_windows(message)
+
         with socket.socket(
             socket.AF_UNIX,
             socket.SOCK_STREAM,
         ) as sock:
 
             sock.settimeout(1.0)
-            sock.connect(str(self.sock_path))
+            sock.connect(str(self.ipc_path))
             sock.sendall(message)
 
             data = b""
@@ -351,8 +408,52 @@ class MPVController:
 
         try:
             return json.loads(line.decode("utf-8"))
+        except (ValueError, UnicodeDecodeError):
+            return {}
 
-        except Exception:
+    def _send_windows(self, message: bytes):
+        kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+        kernel32.CreateFileW.restype = ctypes.c_void_p
+        kernel32.CloseHandle.argtypes = [ctypes.c_void_p]
+        handle = kernel32.CreateFileW(
+            self.pipe_name, 0xC0000000, 0, None, 3, 0, None
+        )
+        if handle == ctypes.c_void_p(-1).value:
+            raise ctypes.WinError(ctypes.get_last_error())
+
+        try:
+            written = ctypes.c_ulong()
+            buffer = ctypes.create_string_buffer(message)
+            if not kernel32.WriteFile(
+                handle, buffer, len(message), ctypes.byref(written), None
+            ):
+                raise ctypes.WinError(ctypes.get_last_error())
+
+            chunks = []
+            while True:
+                buffer = ctypes.create_string_buffer(4096)
+                read = ctypes.c_ulong()
+                if not kernel32.ReadFile(
+                    handle, buffer, len(buffer), ctypes.byref(read), None
+                ):
+                    error = ctypes.get_last_error()
+                    if error == 109:  # ERROR_BROKEN_PIPE
+                        break
+                    raise ctypes.WinError(error)
+                if not read.value:
+                    break
+                chunks.append(buffer.raw[:read.value])
+                if b"\n" in chunks[-1]:
+                    break
+            data = b"".join(chunks)
+        finally:
+            kernel32.CloseHandle(handle)
+
+        if not data:
+            return {}
+        try:
+            return json.loads(data.splitlines()[0].decode("utf-8"))
+        except (ValueError, UnicodeDecodeError):
             return {}
 
 
@@ -447,7 +548,7 @@ class MPVController:
 # GUI
 # =============================================================================
 
-class CourtSlicerApp(tk.Tk):
+class CourtSlicerApp(tk.Tk if tk is not None else object):
 
     def __init__(self, video_path: Path):
 
@@ -495,7 +596,8 @@ class CourtSlicerApp(tk.Tk):
         self._build_ui()
         self._bind_keys()
 
-        # Canvas precisa existir antes do --wid
+        # O Canvas é o vídeo no Linux e permanece como área neutra quando o
+        # mpv usa uma janela própria no macOS/Windows.
         self.update_idletasks()
 
         wid = self.video_canvas.winfo_id()
@@ -1471,6 +1573,13 @@ def print_result(
 def main():
 
     args = parse_args()
+
+    dependency_errors = check_dependencies()
+    if dependency_errors:
+        print(f"[ERRO] Dependências ausentes ({platform_name()}):", file=sys.stderr)
+        for error in dependency_errors:
+            print(f"  - {error}", file=sys.stderr)
+        sys.exit(1)
 
     video_path = resolve_video_path(
         args.video
