@@ -576,8 +576,14 @@ class CourtSlicerApp(tk.Tk if tk is not None else object):
             f"CourtSlicer — {video_path.name}"
         )
 
-        self.geometry("1180x820")
-        self.minsize(850, 650)
+        if self.mpv.uses_embedded_video:
+            self.geometry("1180x820")
+            self.minsize(850, 650)
+        else:
+            # No macOS/Windows o vídeo fica na janela do mpv; não reserve uma
+            # grande área preta vazia no painel de controle.
+            self.geometry("1000x300")
+            self.minsize(900, 280)
 
         self.configure(
             bg="#151515"
@@ -596,11 +602,14 @@ class CourtSlicerApp(tk.Tk if tk is not None else object):
         self._build_ui()
         self._bind_keys()
 
-        # O Canvas é o vídeo no Linux e permanece como área neutra quando o
-        # mpv usa uma janela própria no macOS/Windows.
+        # O Canvas só existe no Linux, onde o mpv é embutido via --wid.
         self.update_idletasks()
 
-        wid = self.video_canvas.winfo_id()
+        wid = (
+            self.video_canvas.winfo_id()
+            if self.video_canvas is not None
+            else None
+        )
 
         try:
 
@@ -645,6 +654,33 @@ class CourtSlicerApp(tk.Tk if tk is not None else object):
             padding=4,
         )
 
+        style.configure(
+            "Control.TButton",
+            background="#303030",
+            foreground="#f2f2f2",
+            padding=(12, 7),
+            font=("Sans", 10),
+        )
+
+        style.map(
+            "Control.TButton",
+            background=[("active", "#444444")],
+            foreground=[("disabled", "#888888")],
+        )
+
+        style.configure(
+            "Prominent.TButton",
+            background="#3f6ea8",
+            foreground="#ffffff",
+            padding=(12, 7),
+            font=("Sans", 10),
+        )
+
+        style.map(
+            "Prominent.TButton",
+            background=[("active", "#527fba")],
+        )
+
 
     def make_button(
         self,
@@ -654,6 +690,20 @@ class CourtSlicerApp(tk.Tk if tk is not None else object):
         width=None,
         prominent=False,
     ):
+
+        if not self.mpv.uses_embedded_video:
+            return ttk.Button(
+                parent,
+                text=text,
+                command=command,
+                width=width,
+                cursor="hand2",
+                style=(
+                    "Prominent.TButton"
+                    if prominent
+                    else "Control.TButton"
+                ),
+            )
 
         if prominent:
             bg = "#3f6ea8"
@@ -691,28 +741,32 @@ class CourtSlicerApp(tk.Tk if tk is not None else object):
         # Video
         # ---------------------------------------------------------------------
 
-        self.video_container = tk.Frame(
-            self,
-            bg="black",
-        )
+        self.video_container = None
+        self.video_canvas = None
 
-        self.video_container.pack(
-            fill=tk.BOTH,
-            expand=True,
-            padx=8,
-            pady=(8, 0),
-        )
+        if self.mpv.uses_embedded_video:
+            self.video_container = tk.Frame(
+                self,
+                bg="black",
+            )
 
-        self.video_canvas = tk.Canvas(
-            self.video_container,
-            bg="black",
-            highlightthickness=0,
-        )
+            self.video_container.pack(
+                fill=tk.BOTH,
+                expand=True,
+                padx=8,
+                pady=(8, 0),
+            )
 
-        self.video_canvas.pack(
-            fill=tk.BOTH,
-            expand=True,
-        )
+            self.video_canvas = tk.Canvas(
+                self.video_container,
+                bg="black",
+                highlightthickness=0,
+            )
+
+            self.video_canvas.pack(
+                fill=tk.BOTH,
+                expand=True,
+            )
 
         # ---------------------------------------------------------------------
         # Bottom panel
@@ -724,10 +778,28 @@ class CourtSlicerApp(tk.Tk if tk is not None else object):
         )
 
         panel.pack(
-            fill=tk.X,
+            fill=(tk.X if self.mpv.uses_embedded_video else tk.BOTH),
+            expand=not self.mpv.uses_embedded_video,
             padx=8,
             pady=8,
         )
+
+        if not self.mpv.uses_embedded_video:
+            tk.Label(
+                panel,
+                text=(
+                    "Vídeo aberto em uma janela separada do mpv — "
+                    "use este painel para controlar e marcar os intervalos."
+                ),
+                bg="#202020",
+                fg="#aaaaaa",
+                font=("Sans", 9),
+                anchor="w",
+                padx=10,
+            ).pack(
+                fill=tk.X,
+                pady=(8, 0),
+            )
 
         # ---------------------------------------------------------------------
         # Timeline
