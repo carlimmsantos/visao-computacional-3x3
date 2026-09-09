@@ -1,5 +1,229 @@
 video,inicio,fim,motivo
-Jogo1_TimeA_vs_TimeB.mp4,00:05:10,00:05:45,timeout
-Jogo1_TimeA_vs_TimeB.mp4,00:12:30,00:14:00,intervalo_entre_periodos
-Jogo1_TimeA_vs_TimeB.mp4,00:20:15,00:20:40,jogador_caido
-Jogo2_TimeC_vs_TimeD.mp4,00:02:00,00:02:20,timeout
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:00:32,00:00:38,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:01:01,00:01:05,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:01:49,00:01:55,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:02:06,00:02:10,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:02:11,00:02:12,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:02:14,00:02:16,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:02:45,00:02:57,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:03:30,00:03:42,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:03:45,00:03:46,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:03:49,00:03:50,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:04:02,00:04:16,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:04:31,00:04:42,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:04:56,00:05:01,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:05:12,00:05:15,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:05:16,00:05:27,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:05:53,00:05:56,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:06:02,00:06:25,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:06:42,00:07:05,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:07:43,00:07:56,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:08:20,00:08:41,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:08:51,00:08:54,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:09:09,00:09:53,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:10:01,00:10:05,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:10:22,00:10:32,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:10:55,00:11:07,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:11:25,00:11:30,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:11:33,00:11:42,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:12:06,00:12:15,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:12:25,00:12:39,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:13:27,00:13:32,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:13:49,00:14:04,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:14:22,00:14:54,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:15:16,00:15:27,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:15:50,00:16:07,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:16:21,00:16:23,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:17:17,00:17:20,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:17:46,00:18:03,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:18:26,00:18:45,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:19:16,00:19:25,tempo_morto
+Jogo5_DREHER_TEAM_vs_ARENA_CASTELO.mp4,00:19:34,00:19:41,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:00:49,00:01:05,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:01:49,00:01:56,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:02:09,00:02:17,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:02:27,00:02:36,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:03:10,00:03:24,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:03:44,00:04:00,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:04:31,00:04:41,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:05:31,00:05:44,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:05:52,00:05:59,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:06:41,00:06:54,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:07:05,00:07:16,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:07:30,00:07:46,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:07:56,00:08:12,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:08:18,00:08:37,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:08:42,00:08:54,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:09:37,00:09:49,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:09:51,00:10:31,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:10:45,00:10:52,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:11:43,00:11:53,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:11:54,00:12:43,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:12:49,00:13:00,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:13:51,00:14:04,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:14:15,00:14:32,tempo_morto
+Jogo6_MCS_vs_BASQUETE PB.mp4,00:14:45,00:15:07,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:00:00,00:00:12,logo
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:00:17,00:00:23,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:00:32,00:00:38,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:00:44,00:00:55,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:01:00,00:01:09,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:01:23,00:01:33,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:02:12,00:02:25,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:02:35,00:02:45,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:03:02,00:03:13,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:03:20,00:03:29,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:03:38,00:03:47,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:03:55,00:04:02,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:04:42,00:04:59,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:05:12,00:05:24,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:05:57,00:06:55,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:07:29,00:08:06,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:08:38,00:08:47,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:10:26,00:10:40,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:11:05,00:11:16,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:11:42,00:11:53,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:12:44,00:13:06,tempo_morto
+Jogo7_BOTAFOGO_PB_vs_MANIACOS.mp4,00:13:54,00:14:03,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:00:00,00:00:27,logo
+Jogo8_IFPB_vs_BSL.mp4,00:00:45,00:00:51,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:01:12,00:01:29,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:02:07,00:02:24,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:03:11,00:03:28,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:03:55,00:04:05,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:04:45,00:04:55,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:05:20,00:05:32,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:05:46,00:05:56,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:06:15,00:06:26,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:07:03,00:07:18,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:07:31,00:07:46,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:08:25,00:08:36,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:09:37,00:09:51,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:10:05,00:10:22,tempo_morto
+Jogo8_IFPB_vs_BSL.mp4,00:10:27,00:10:36,tempo_morto
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:00:00,00:00:01,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:00:13,00:00:30,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:00:46,00:01:02,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:01:45,00:01:56,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:02:10,00:03:36,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:03:42,00:04:01,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:04:15,00:04:24,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:04:50,00:05:01,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:05:21,00:05:38,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:06:24,00:06:34,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:06:56,00:07:08,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:07:42,00:07:59,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:08:23,00:08:34,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:08:58,00:09:10,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:09:23,00:09:40,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:10:10,00:10:23,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:10:34,00:10:45,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:11:09,00:11:12,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:11:18,00:12:24,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:12:56,00:13:05,sem_bola_em_jogo
+Jogo1_GUARANI_vs_MANIACAS.mp4,00:13:39,00:13:50,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:00:00,00:00:01,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:00:04,00:00:12,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:00:33,00:00:44,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:01:39,00:01:50,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:02:32,00:02:51,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:03:06,00:03:12,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:03:14,00:03:16,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:03:38,00:03:52,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:04:27,00:04:50,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:05:41,00:05:44,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:05:55,00:06:05,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:07:31,00:07:51,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:08:05,00:08:16,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:08:32,00:08:41,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:09:17,00:09:20,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:09:24,00:09:36,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:10:25,00:10:39,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:10:45,00:10:54,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:11:05,00:11:16,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:13:10,00:13:43,sem_bola_em_jogo
+Jogo2_GBA_KINGS_vs_GUARANI.mp4,00:14:05,00:14:31,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:00:30,00:02:00,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:02:41,00:02:56,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:04:25,00:04:35,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:05:12,00:05:27,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:05:52,00:06:00,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:06:13,00:06:22,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:06:53,00:07:01,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:07:05,00:07:09,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:07:15,00:08:12,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:08:18,00:08:30,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:09:09,00:10:14,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:10:41,00:10:52,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:11:27,00:11:43,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:12:04,00:12:32,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:12:38,00:13:00,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:13:10,00:13:28,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:13:36,00:14:16,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:14:46,00:14:58,sem_bola_em_jogo
+Jogo3_BOTAFOGO_vs_BOTAFOGO_B.mp4,00:15:00,00:15:07,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:00:00,00:00:01,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:00:16,00:00:26,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:01:48,00:02:10,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:02:47,00:02:58,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:03:51,00:04:08,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:04:33,00:04:49,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:04:56,00:05:09,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:05:24,00:05:33,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:06:13,00:06:24,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:06:40,00:06:53,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:07:18,00:07:22,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:08:19,00:08:37,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:09:16,00:10:24,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:10:34,00:10:38,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:12:14,00:12:32,sem_bola_em_jogo
+Jogo4_DYNAMITE_vs_GUARANI.mp4,00:14:16,00:14:21,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:00:18,00:00:33,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:00:51,00:00:58,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:01:14,00:01:16,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:02:29,00:02:34,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:02:53,00:03:09,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:03:36,00:03:38,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:03:50,00:04:09,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:04:22,00:04:30,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:04:56,00:05:08,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:05:37,00:05:58,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:06:44,00:06:55,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:07:20,00:07:30,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:07:53,00:08:05,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:08:31,00:08:34,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:09:04,00:09:12,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:09:54,00:11:01,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:11:15,00:11:19,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:11:39,00:11:50,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:12:12,00:12:22,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:12:41,00:13:00,sem_bola_em_jogo
+Jogo5_GUARANI_vs_BOTAFOGO.mp4,00:13:39,00:13:42,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:00:00,00:00:03,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:01:22,00:01:28,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:01:46,00:01:57,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:02:28,00:02:43,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:02:57,00:03:00,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:03:11,00:03:17,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:03:37,00:04:43,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:05:34,00:05:46,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:05:51,00:05:57,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:06:17,00:06:32,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:06:41,00:06:55,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:07:04,00:07:12,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:07:29,00:07:39,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:07:48,00:07:55,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:08:04,00:08:19,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:08:38,00:08:46,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:08:54,00:08:59,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:09:14,00:09:31,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:10:39,00:10:52,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:10:55,00:11:00,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:12:16,00:12:33,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:12:53,00:13:04,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:13:38,00:13:47,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:14:02,00:14:10,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:14:29,00:14:37,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:14:48,00:14:55,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:15:04,00:15:10,sem_bola_em_jogo
+Jogo6_GUARANI_vs_BOTAFOGO.mp4,00:15:23,00:15:31,sem_bola_em_jogo
