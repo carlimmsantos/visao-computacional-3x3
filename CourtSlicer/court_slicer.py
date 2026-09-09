@@ -185,6 +185,11 @@ def platform_name() -> str:
     return platform.system() or sys.platform
 
 
+def is_wayland_session() -> bool:
+    session_type = os.environ.get("XDG_SESSION_TYPE", "").casefold()
+    return session_type == "wayland" or bool(os.environ.get("WAYLAND_DISPLAY"))
+
+
 def check_dependencies() -> list[str]:
     """Retorna erros de ambiente sem iniciar a janela Tk."""
     errors = []
@@ -290,7 +295,7 @@ class MPVController:
 
     @property
     def uses_embedded_video(self) -> bool:
-        return sys.platform.startswith("linux")
+        return sys.platform.startswith("linux") and not is_wayland_session()
 
     @property
     def ipc_target(self) -> str:
@@ -303,9 +308,11 @@ class MPVController:
 
         cmd = [
             "mpv",
-            # O embedding via --wid é confiável no Linux. Nos demais sistemas
-            # o mpv abre sua própria janela e o Tk continua sendo o painel.
+            # No Wayland, --wid pode abortar o mpv; nesse caso, ele abre em uma
+            # janela separada e o Tk continua sendo o painel de controle.
             *( [f"--wid={wid}"] if self.uses_embedded_video and wid else [] ),
+            # Evita falhas da pilha GPU/VAAPI ao reproduzir AV1 no Wayland.
+            *( ["--vo=wlshm", "--hwdec=no"] if is_wayland_session() else [] ),
             # A opção é específica do problema de vídeo entrelaçado observado
             # no Linux; não força um filtro nos decoders do macOS/Windows.
             *( ["--deinterlace=yes"] if sys.platform.startswith("linux") else [] ),
@@ -321,7 +328,7 @@ class MPVController:
         self.proc = subprocess.Popen(
             cmd,
             stdout=subprocess.DEVNULL,
-            stderr=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
             text=True,
         )
 
@@ -333,14 +340,9 @@ class MPVController:
                 break
             time.sleep(0.05)
 
-        detail = ""
-        if self.proc.poll() is not None and self.proc.stderr is not None:
-            detail = self.proc.stderr.read().strip()
-        suffix = f" Detalhe do mpv: {detail}" if detail else ""
         raise RuntimeError(
             f"O mpv não disponibilizou o IPC para {platform_name()}. "
             "Confirme se o mpv está instalado e se pode ser executado no PATH."
-            f"{suffix}"
         )
 
     def _ipc_ready(self) -> bool:
