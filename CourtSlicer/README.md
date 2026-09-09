@@ -19,10 +19,11 @@ pastas de entrada/saída por partida.
 - `ffmpeg` e `ffprobe` disponíveis no `PATH`
 - `tkinter` (interface gráfica e captura de teclado)
 
-No Linux o vídeo continua embutido no painel do CourtSlicer. No macOS e no
-Windows o mpv abre em uma janela própria, porque o embedding do mpv em Tk não
-é estável nessas plataformas; a janela do CourtSlicer continua controlando o
-playback, a timeline e as marcações via IPC.
+No Linux com X11, o vídeo fica embutido no painel do CourtSlicer. No Wayland,
+macOS e Windows, o mpv abre em uma janela própria, porque o embedding do mpv em
+Tk não é estável nesses ambientes; a janela do CourtSlicer continua controlando
+o playback, a timeline e as marcações via IPC. No Wayland, a saída de vídeo e a
+decodificação usam modo de software para evitar incompatibilidades de GPU.
 
 ## Instalação
 
